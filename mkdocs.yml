@@ -1,4 +1,15 @@
-site_name: My Docs
+site_name: Brukernotifikasjon-docs
 
 theme:
   name: material
+  
+  palette:
+    primary: grey
+    accent: blue
+ 
+  favicon: assets/favicon.ico
+ 
+  logo: assets/nav-icon.svg
+
+extra_css:
+  - css/extra.css

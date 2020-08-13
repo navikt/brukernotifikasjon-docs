@@ -1,17 +1,12 @@
-# Welcome to MkDocs
+# Brukernotifikasjoner
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Hva er DittNAV sitt nye konsept?
 
-## Commands
+Nå kan alle i NAV sende meldinger på brukernotifikasjons-topic-en vår. Vi leser fra kafka topic-en og viser meldingen (brukernotifikasjonen) på forsiden av DittNAV.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Vi har tre typer brukernotifikasjoner:
 
-## Project layout
+* Beskjed: Dette er en typisk melding til sluttbrukeren. For eksempel, «vi har mottatt søknaden din».
+* Oppgave: Denne brukes når du vil ha utført en konkret oppgave. For eksempel, «vi mangler et vedlegg. Send inn her <...>.»
+* Done: Dette sendes når oppgaven er utført. Hvis vi bruker samme eksempel som over ville du sendt et done-event når sluttbrukeren har lastet opp vedlegget.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
