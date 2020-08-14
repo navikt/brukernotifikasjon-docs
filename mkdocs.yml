@@ -2,6 +2,8 @@ site_name: Brukernotifikasjon-docs
 
 theme:
   name: material
+
+  language: 'no'
   
   palette:
     primary: grey
