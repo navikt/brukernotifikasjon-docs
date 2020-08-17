@@ -7,11 +7,14 @@ $ pip install mkdocs-material
 $ mkdocs serve
 ```
 Siden skal nå vises her: http://127.0.0.1:8000
-### Build
+
+### Automatisk deploy
+Dette repoet skal deploy-e automatisk til [denne](https://navikt.github.io/brukernotifikasjon-docs/) siden ved push til master.
+
+### Manuell deploy
+For å deploy-e manuelt:
 ```
 $ mkdocs build
-```
-### Deploy
-```
 $ mkdocs gh-deploy
 ```
+
