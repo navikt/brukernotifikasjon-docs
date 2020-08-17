@@ -10,3 +10,4 @@ Vi har tre typer brukernotifikasjoner:
 * Oppgave: Denne brukes når du vil ha utført en konkret oppgave. For eksempel, «vi mangler et vedlegg. Send inn her <...>.»
 * Done: Dette sendes når oppgaven er utført. Hvis vi bruker samme eksempel som over ville du sendt et done-event når sluttbrukeren har lastet opp vedlegget.
 
+Du kan se en oversikt over konseptet [her](https://navikt.github.io/dittnav-brukernotifikasjoner-intro/).
