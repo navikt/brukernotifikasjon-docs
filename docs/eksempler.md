@@ -7,7 +7,7 @@ Det følgende er kun eksempler på hvordan brukernotifikasjoner kan tas i bruk, 
 URL-en til Kafkas schema-register må spesifiseres, dette gjøres i din kafka-producer-config f.eks. slik:
 
 ```
-    put(KafkaAvroDeserializerConfig.SCHEMA_REGISTRY_URL_CONFIG, env.schemaRegistryUrl)
+put(KafkaAvroDeserializerConfig.SCHEMA_REGISTRY_URL_CONFIG, env.schemaRegistryUrl)
 ```
 
 
