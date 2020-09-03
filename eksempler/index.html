@@ -600,7 +600,7 @@
 <h4 id="minimal-kafka-producer-som-publiserer-brukernotifikasjoner-pa-kafka">Minimal kafka-producer som publiserer brukernotifikasjoner på kafka</h4>
 <p><a href="https://github.com/navikt/brukernotifikasjoner-demo-producer">Dette</a> er et mini-prosjekt som viser hvordan man kan lage en minimal kafka-producer for å publisere brukernotifikasjoner som vil vises på forsiden av DittNAV. I det du produserer et event til en kafka-topic så vil kafka “notere” seg hvilken versjon av skjemaet som den konkrete meldingen ble produsert med.</p>
 <p>URL-en til Kafkas schema-register må spesifiseres, dette gjøres i din kafka-producer-config f.eks. slik:</p>
-<pre><code>    put(KafkaAvroDeserializerConfig.SCHEMA_REGISTRY_URL_CONFIG, env.schemaRegistryUrl)
+<pre><code>put(KafkaAvroDeserializerConfig.SCHEMA_REGISTRY_URL_CONFIG, env.schemaRegistryUrl)
 </code></pre>
 
 <p>riktig <a href="https://confluence.adeo.no/pages/viewpage.action?pageId=239339073">URL finnes her</a>.
