@@ -1,13 +1,14 @@
-# Brukernotifikasjoner
+# Introduksjon
 
-## Hva er DittNAV sitt nye konsept?
+Brukernotifikasjoner gjør det mulig for andre team å sende Beskjeder eller Oppgaver til en spesifikk bruker, og få vist 
+dette fram på forsiden av DittNAV.
+ 
+Dette gjøres gjennom at det blir publisert et event på et sett med topic-er, deretter vil DittNAV ta seg av å vise dette for sluttbruker.
 
-Nå kan alle i NAV sende meldinger på brukernotifikasjons-topic-en vår. Vi leser fra kafka topic-en og viser meldingen (brukernotifikasjonen) på forsiden av DittNAV.
+Teamene kan selv deaktivere eventene igjen, hvis eventene ikke er relevante lengre.
 
-Vi har tre typer brukernotifikasjoner:
+Deaktiverte eventer vil fortsatt være tilgjengelig fra historikk-visningen på DittNAV.
 
-* Beskjed: Dette er en typisk melding til sluttbrukeren. For eksempel, «vi har mottatt søknaden din».
-* Oppgave: Denne brukes når du vil ha utført en konkret oppgave. For eksempel, «vi mangler et vedlegg. Send inn her <...>.»
-* Done: Dette sendes når oppgaven er utført. Hvis vi bruker samme eksempel som over ville du sendt et done-event når sluttbrukeren har lastet opp vedlegget.
+Brukernotifikasjoner kan også brukes til å bygge opp tidslinjer, ved at eventer som naturlig hører sammen blir gruppert i en tidslinje.
 
-Du kan se en oversikt over konseptet [her](https://navikt.github.io/dittnav-brukernotifikasjoner-intro/).
+Les mer om eventtypene [her](eventtyper/fellesinfo.md).
