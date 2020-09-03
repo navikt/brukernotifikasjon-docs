@@ -15,7 +15,7 @@
     
     
       
-        <title>Schemas - Brukernotifikasjon-docs</title>
+        <title>Feilsøking - Brukernotifikasjon-docs</title>
       
     
     
@@ -59,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#feilsking" class="md-skip">
+          Gå til innhold
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -82,7 +87,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Schemas
+              Feilsøking
             
           </span>
         </div>
@@ -201,11 +206,20 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../feilsoking/" title="Feilsøking" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Feilsøking" class="md-nav__link md-nav__link--active">
       Feilsøking
     </a>
+    
   </li>
 
     
@@ -249,18 +263,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Schemas" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../schemas/" title="Schemas" class="md-nav__link">
       Schemas
     </a>
-    
   </li>
 
     
@@ -565,6 +572,21 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Innholdsfortegnelse">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -574,9 +596,14 @@
                   
                 
                 
-                  <h1>Schemas</h1>
-                
-                <p>Er publisert <a href="https://jitpack.io/#navikt/brukernotifikasjon-schemas">her</a></p>
+                <h1 id="feilsking">Feilsøking</h1>
+<ol>
+<li>Verifiser at alt gikk bra med prosesseringen av eventet:<ol>
+<li>Sjekk i grafana <a href="../metrics/">Grafana</a></li>
+<li>Sjekk loggene for dittnav-event-aggregator, som er appen som leser inn eventene fra Kafka. <a href="https://logs.adeo.no/goto/1d97afe420fbec819597ec348c876c83">Kibana</a>.</li>
+</ol>
+</li>
+</ol>
                 
               
               
@@ -595,7 +622,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../metrics/" title="Metrics" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../faq/" title="FAQ" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -604,19 +631,19 @@
                 <span class="md-footer-nav__direction">
                   Forrige
                 </span>
-                Metrics
+                FAQ
               </div>
             </div>
           </a>
         
         
-          <a href="../tidslinjer/" title="Tidslinjer" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../kafkakonfig/" title="Kafka-konfig" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Neste
                 </span>
-                Tidslinjer
+                Kafka-konfig
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

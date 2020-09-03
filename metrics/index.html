@@ -15,7 +15,7 @@
     
     
       
-        <title>Schemas - Brukernotifikasjon-docs</title>
+        <title>Metrics - Brukernotifikasjon-docs</title>
       
     
     
@@ -59,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#metrics" class="md-skip">
+          Gå til innhold
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -82,7 +87,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Schemas
+              Metrics
             
           </span>
         </div>
@@ -237,18 +242,6 @@
       
       
 
-
-  <li class="md-nav__item">
-    <a href="../metrics/" title="Metrics" class="md-nav__link">
-      Metrics
-    </a>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
@@ -256,11 +249,85 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
     
-    <a href="./" title="Schemas" class="md-nav__link md-nav__link--active">
-      Schemas
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Metrics
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Metrics" class="md-nav__link md-nav__link--active">
+      Metrics
     </a>
     
+      
+<nav class="md-nav md-nav--secondary" aria-label="Innholdsfortegnelse">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Innholdsfortegnelse
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prosessering" class="md-nav__link">
+    Prosessering
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topic-vs-cache" class="md-nav__link">
+    Topic vs cache
+  </a>
+  
+    <nav class="md-nav" aria-label="Topic vs cache">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#totaloversikt" class="md-nav__link">
+    Totaloversikt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oversikt-per-team" class="md-nav__link">
+    Oversikt per team
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../schemas/" title="Schemas" class="md-nav__link">
+      Schemas
+    </a>
   </li>
 
     
@@ -565,6 +632,65 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Innholdsfortegnelse">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Innholdsfortegnelse
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prosessering" class="md-nav__link">
+    Prosessering
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topic-vs-cache" class="md-nav__link">
+    Topic vs cache
+  </a>
+  
+    <nav class="md-nav" aria-label="Topic vs cache">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#totaloversikt" class="md-nav__link">
+    Totaloversikt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oversikt-per-team" class="md-nav__link">
+    Oversikt per team
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -574,9 +700,32 @@
                   
                 
                 
-                  <h1>Schemas</h1>
-                
-                <p>Er publisert <a href="https://jitpack.io/#navikt/brukernotifikasjon-schemas">her</a></p>
+                <h1 id="metrics">Metrics</h1>
+<p>DittNAV teamet har laget et par granfa-dashbards som kan brukes for å verifisere at alt fungerer som det skal.</p>
+<h2 id="prosessering">Prosessering</h2>
+<p>Viser info om den løpende prosesseringen av eventer:</p>
+<ul>
+<li>Prosesseringstid</li>
+<li>Antall eventer motatt.</li>
+<li>Antall felende eventer.</li>
+</ul>
+<h2 id="topic-vs-cache">Topic vs cache</h2>
+<p>Metrics som oppdateres hvert femte minutt for å verifisere at alt unikt innhold på topic-ene har havnet i DittNAVs-event-cache.</p>
+<p><a href="https://grafana.adeo.no/d/6ore-PuZz/dittnav-kafka?orgId=1&amp;refresh=1m&amp;var-cluster=prod-sbs&amp;var-namespace=All&amp;var-event_type=All&amp;var-producer=All">Dashboardet finnes her.</a></p>
+<h3 id="totaloversikt">Totaloversikt</h3>
+<p>Alle eventer sett under ett:</p>
+<ul>
+<li>Info om eventuell diff, mellom hva som finnes av eventer på kafka-topic-ene og hva som finnes i cache-en. </li>
+<li>Visualisert per eventtype.</li>
+</ul>
+<p><a href="https://grafana.adeo.no/d/ZpeXY3mGz/dittnav-brukernotifikasjoner?orgId=1&amp;refresh=5m">Dashboardet finnes her.</a></p>
+<h3 id="oversikt-per-team">Oversikt per team</h3>
+<p>Alle evneter gruppert per systembruker/produsent:</p>
+<ul>
+<li>Info om eventuell diff, mellom hva som finnes av eventer på kafka-topic-ene og hva som finnes i cache-en. </li>
+<li>Visualisert per eventtype.</li>
+</ul>
+<p><a href="https://grafana.adeo.no/d/jXntDVWGk/brukernotifikasjoner-per-produsent?orgId=1&amp;refresh=5m&amp;var-env=prod&amp;var-cluster=prod-sbs&amp;var-cluster_fss=prod-fss&amp;var-namespace=default&amp;var-producer=syfo-sykmeldingsvarsel">Dashboardet finnes her.</a></p>
                 
               
               
@@ -595,7 +744,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../metrics/" title="Metrics" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../komme_i_gang/" title="Komme i gang" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -604,19 +753,19 @@
                 <span class="md-footer-nav__direction">
                   Forrige
                 </span>
-                Metrics
+                Komme i gang
               </div>
             </div>
           </a>
         
         
-          <a href="../tidslinjer/" title="Tidslinjer" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../schemas/" title="Schemas" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Neste
                 </span>
-                Tidslinjer
+                Schemas
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

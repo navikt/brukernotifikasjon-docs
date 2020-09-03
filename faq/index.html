@@ -15,7 +15,7 @@
     
     
       
-        <title>Schemas - Brukernotifikasjon-docs</title>
+        <title>FAQ - Brukernotifikasjon-docs</title>
       
     
     
@@ -59,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#faq" class="md-skip">
+          Gå til innhold
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -82,7 +87,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Schemas
+              FAQ
             
           </span>
         </div>
@@ -189,11 +194,66 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../faq/" title="FAQ" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        FAQ
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="FAQ" class="md-nav__link md-nav__link--active">
       FAQ
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Innholdsfortegnelse">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Innholdsfortegnelse
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kan-eventer-reaktiveres" class="md-nav__link">
+    Kan eventer reaktiveres?
+  </a>
+  
+    <nav class="md-nav" aria-label="Kan eventer reaktiveres?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hvordan-oppna-samme-effekt" class="md-nav__link">
+    Hvordan oppnå samme effekt
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -249,18 +309,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Schemas" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../schemas/" title="Schemas" class="md-nav__link">
       Schemas
     </a>
-    
   </li>
 
     
@@ -565,6 +618,51 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Innholdsfortegnelse">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Innholdsfortegnelse
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kan-eventer-reaktiveres" class="md-nav__link">
+    Kan eventer reaktiveres?
+  </a>
+  
+    <nav class="md-nav" aria-label="Kan eventer reaktiveres?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hvordan-oppna-samme-effekt" class="md-nav__link">
+    Hvordan oppnå samme effekt
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -574,9 +672,12 @@
                   
                 
                 
-                  <h1>Schemas</h1>
-                
-                <p>Er publisert <a href="https://jitpack.io/#navikt/brukernotifikasjon-schemas">her</a></p>
+                <h1 id="faq">FAQ</h1>
+<h2 id="kan-eventer-reaktiveres">Kan eventer reaktiveres?</h2>
+<p>Nei, eventer kan ikke reaktiveres. Hvis det først har blitt sendt minst ett done-event for en brukernotifikasjon så vil 
+eventet blir satt som inaktivt.</p>
+<h3 id="hvordan-oppna-samme-effekt">Hvordan oppnå samme effekt</h3>
+<p>Send et done-event for eventer man vil dekativere. Send deretter en ny brukernotifikasjon.</p>
                 
               
               
@@ -595,7 +696,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../metrics/" title="Metrics" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../eksempler/" title="Eksempler" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -604,19 +705,19 @@
                 <span class="md-footer-nav__direction">
                   Forrige
                 </span>
-                Metrics
+                Eksempler
               </div>
             </div>
           </a>
         
         
-          <a href="../tidslinjer/" title="Tidslinjer" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../feilsoking/" title="Feilsøking" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Neste
                 </span>
-                Tidslinjer
+                Feilsøking
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
