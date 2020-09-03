@@ -1,5 +1,5 @@
 # Metrics
-DittNAV teamet har laget et par granfa-dashbards som kan brukes for å verifisere at alt fungere rsom det skal.
+DittNAV teamet har laget et par granfa-dashbards som kan brukes for å verifisere at alt fungerer som det skal.
 
 ## Prosessering
 Viser info om den løpende prosesseringen av eventer:

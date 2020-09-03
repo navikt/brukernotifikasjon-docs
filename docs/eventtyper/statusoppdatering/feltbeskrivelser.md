@@ -20,7 +20,7 @@ Dette er lenken som blir aktivert i det en bruker trykker på selve eventet. En 
 
 ### sikkerhetsnivaa
 Angir sikkerhetsnivået for informasjonen som eventet innholder.
-DittNAV søtter at en bruker er innlogget på nivå 3, hvis denne brukeren har eventer med nivå 4 så vil disse eventene bli "grået ut". Brukeren ser bare hvilken type event dette er, men ikke noe av innholdet. For å se innholdet må brukeren steppe opp til et høyere innloggingsnivå.
+DittNAV støtter at en bruker er innlogget på nivå 3, hvis denne brukeren har eventer med nivå 4 så vil disse eventene bli "grået ut". Brukeren ser bare hvilken type event dette er, men ikke noe av innholdet. For å se innholdet må brukeren steppe opp til et høyere innloggingsnivå.
 
 ### statusGlobal
 Produsenten må velge én av våre fire globale statuser: SENDT, MOTTATT, UNDER_BEHANDLING eller FERDIG.

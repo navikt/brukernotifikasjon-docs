@@ -9,6 +9,6 @@ Teamene kan selv deaktivere eventene igjen, hvis eventene ikke er relevante leng
 
 Deaktiverte eventer vil fortsatt være tilgjengelig fra historikk-visningen på DittNAV.
 
-Brukernotifikasjoner kan også brukes til å bygge opptidslinjer, ved at eventer som naturlig hører sammen blir gruppert i en tidslinje.
+Brukernotifikasjoner kan også brukes til å bygge opp tidslinjer, ved at eventer som naturlig hører sammen blir gruppert i en tidslinje.
 
 Les mer om eventtypene [her](eventtyper/fellesinfo.md).
