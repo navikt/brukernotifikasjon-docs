@@ -15,7 +15,7 @@
     
     
       
-        <title>Komme i gang - Brukernotifikasjon-docs</title>
+        <title>Kontakt - Brukernotifikasjon-docs</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#komme-i-gang" class="md-skip">
+        <a href="#kontakt" class="md-skip">
           Gå til innhold
         </a>
       
@@ -87,7 +87,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Komme i gang
+              Kontakt
             
           </span>
         </div>
@@ -230,6 +230,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../komme_i_gang/" title="Komme i gang" class="md-nav__link">
+      Komme i gang
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -240,22 +252,50 @@
       
     
     
-    <a href="./" title="Komme i gang" class="md-nav__link md-nav__link--active">
-      Komme i gang
-    </a>
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Kontakt
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
     
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../kontakt/" title="Kontakt" class="md-nav__link">
+    <a href="./" title="Kontakt" class="md-nav__link md-nav__link--active">
       Kontakt
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Innholdsfortegnelse">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Innholdsfortegnelse
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#team" class="md-nav__link">
+    Team
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slack" class="md-nav__link">
+    Slack
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -678,6 +718,30 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Innholdsfortegnelse
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#team" class="md-nav__link">
+    Team
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slack" class="md-nav__link">
+    Slack
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -692,21 +756,11 @@
                   
                 
                 
-                <h1 id="komme-i-gang">Komme i gang</h1>
-<ol>
-<li>Velg rett event-type. Les gjennom event-typene <a href="../eventtyper/fellesinfo/">her</a>.</li>
-<li>Se på <a href="../eksempler/">dette</a> eksemplet. <a href="https://github.com/navikt/brukernotifikasjon-schemas/tree/master/src/main/avro">Her</a> finner du våre schemas. Biblioteket finner du <a href="https://jitpack.io/#navikt/brukernotifikasjon-schemas">her</a>.</li>
-<li>Se også på kodeeksemplet til valgt event-type. For eksempel <a href="../eventtyper/beskjed/kodeeksempel/">Beskjed</a>.</li>
-<li>Bestill tilgang til <code>dev-topic</code> <a href="https://github.com/navikt/brukernotifikasjon-topic-iac">her</a>.</li>
-<li>Publiser et event i <code>dev</code> og verifiser at det fungerer:<ul>
-<li>Verifiser at eventene som produseres dukker opp i <a href="https://grafana.adeo.no/d/jXntDVWGk/brukernotifikasjoner-per-produsent?orgId=1&amp;refresh=5m&amp;var-env=dev&amp;var-cluster=dev-sbs&amp;var-cluster_fss=dev-fss&amp;var-namespace=q1">grafanaboardet 'Brukernotifikasjoner per produsent'</a>. 
-Velg din <code>systembruker</code>-mapping i nedtrekkslisten <code>producer</code>. 
-Se mapping av systembruker <a href="https://github.com/navikt/brukernotifikasjon-topic-iac/blob/master/dev/systembrukermapping-dev.sql">her</a>. Feilsøking se <a href="../feilsoking/">her</a>.</li>
-<li>Logg inn på <a href="https://www.dev.nav.no/person/dittnav">DittNAV i <code>dev</code></a> og verifiser at eventet dukker opp på forsiden.          </li>
-</ul>
-</li>
-<li>Kontakt team-personbruker og bestill tilgang til <code>prod-topic-en</code> <a href="https://github.com/navikt/brukernotifikasjon-topic-iac">her</a>. </li>
-</ol>
+                <h1 id="kontakt">Kontakt</h1>
+<h3 id="team">Team</h3>
+<p>Personbruker</p>
+<h3 id="slack">Slack</h3>
+<p><code>#brukernotifikasjoner</code></p>
                 
               
               
@@ -725,7 +779,7 @@ Se mapping av systembruker <a href="https://github.com/navikt/brukernotifikasjon
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../kafkakonfig/" title="Kafka-konfig" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../komme_i_gang/" title="Komme i gang" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -734,19 +788,19 @@ Se mapping av systembruker <a href="https://github.com/navikt/brukernotifikasjon
                 <span class="md-footer-nav__direction">
                   Forrige
                 </span>
-                Kafka-konfig
+                Komme i gang
               </div>
             </div>
           </a>
         
         
-          <a href="../kontakt/" title="Kontakt" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../metrics/" title="Metrics" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Neste
                 </span>
-                Kontakt
+                Metrics
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
