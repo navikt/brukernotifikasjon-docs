@@ -11,7 +11,7 @@
       
       
       <link rel="shortcut icon" href="../../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.6">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.7">
     
     
       
@@ -19,9 +19,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.63b94e9e.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.b8ac9624.min.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.7f672a1f.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.28f3ef9a.min.css">
       
       
         
@@ -699,7 +699,7 @@
                 <h1 id="beskrivelse">Beskrivelse</h1>
 <p>Oppgave brukes når du vil ha utført en konkret oppgave. For eksempel, «vi mangler et vedlegg. Send inn her &lt;...&gt;.»</p>
 <p>Brukeren kan ikke selv klikke bort et <code>oppgave-event</code>. Så her må du som produsent sende et <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/done.avsc">done-event</a> på en egen <a href="https://github.com/navikt/brukernotifikasjon-topic-iac/blob/master/dev/aapen-brukernotifikasjon-done-v1.json">done-topic</a>, og dette done-eventet må ha samme Nokkel som oppgaven den skal markere som done. Altså <code>done-eventet</code> må ha samme <code>event-id</code> og <code>systembruker</code> som <code>oppgave-eventet</code> sitt <code>event-id</code> og <code>systembruker</code>. <code>Done-eventet</code> må også ha samme <code>fødselsnummer</code> som <code>oppgave-eventet</code>. Vi ser for oss at <code>event-id</code> kan være en random UUID som unikt kobler beskjed/oppgaven til done-eventet.</p>
-<p><img alt="Images" src="https://github.com/navikt/brukernotifikasjon-docs/blob/master/docs/assets/Oppgave.png" /></p>
+<p><img alt="Images" src="https://github.com/navikt/brukernotifikasjon-docs/blob/master/docs/assets/Oppgave.png?raw=true" /></p>
                 
               
               
