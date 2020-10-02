@@ -2,6 +2,7 @@
 
 DittNAV sender `done-event` på `beskjed-event`, siden brukeren selv kan klikke bort disse eventene når beskjeden er mottatt.
 
-Du vil fortsatt se eventet på historikk-siden.
+Deaktiverte eventer vil fortsatt være tilgjengelig fra historikk-visningen på DittNAV.
 
 ![Images](https://github.com/navikt/brukernotifikasjon-docs/docs/assets/Historikk.png)
+

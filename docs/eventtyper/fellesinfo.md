@@ -1,5 +1,5 @@
-Alle brukernotifikasjoner består av en key og en value som legges på kafka-topicene. Alle eventtypene bruker [Nokkel]() som key, 
-mens hver eventtype har sin egen value. Se egene underkapitler for dette.
+Alle brukernotifikasjoner består av en `key` og en `value` som legges på kafka-topicene. Alle eventtypene bruker [Nokkel]() som key, 
+mens hver eventtype har sin egen value. Se egene underkapitler for dette ([Beskjed](./beskjed/beskrivelse.md), [Oppgave](./oppgave/beskrivelse.md), [Done](./done/beskrivelse.md) og [Statusoppdatering](./statusoppdatering/beskrivelse.md)).
 
 ## Hva gjør et event unikt?
 
@@ -12,3 +12,6 @@ Navn på systembruker som har produsert eventet. Feltet har en begrensning på 1
 
 ### eventId
 Den unike identifikatoren per event, og den må være unik innen for hver `systembruker` (produsent). Det er denne `eventID`-en som benyttes for å deaktivere eventer som er utført. Dette gjøres ved å sende et event av typen done, med referanse til det eventet som ikke skal vises på DittNAV lengre. Feltet har en begrensning på 50 tegn og kan ikke være null. 
+
+#### Schemas
+Du finner `Nokkel-schemas` [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/nokkel.avsc).

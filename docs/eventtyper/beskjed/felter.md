@@ -28,3 +28,6 @@ DittNAV støtter at en bruker er innlogget på nivå 3, hvis denne brukeren har 
 
 ### synligFremTil
 Et tidspunkt på når eventet ikke skal være synlig mer, f.eks beskjeden skal kun være synlig 7 dager. SynligFramTil = null -> synlig for alltid, med mindre brukeren selv krysser den ut fra forsiden av DittNAV.
+
+#### Schemas
+Du finner `Beskjed-schemas` [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/beskjed.avsc).
