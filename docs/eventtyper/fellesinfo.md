@@ -8,7 +8,7 @@ mens hver eventtype har sin egen value. Se egene underkapitler for dette.
 Feltene i Nokkel er som en kompositt-nøkkel for å unikt identifisere eventet.
 
 ### systembruker
-Navn på systembruker som har produsert eventet.
+Navn på systembruker som har produsert eventet. Feltet har en begrensning på 100 tegn og kan ikke være null. 
 
 ### eventId
-Den unike identifikatoren per event, og den må være unik innen for hver `systembruker` (produsent). Det er denne `eventID`-en som benyttes for å deaktivere eventer som er utført. Dette gjøres ved å sende et event av typen done, med referanse til det eventet som ikke skal vises på DittNAV lengre.
+Den unike identifikatoren per event, og den må være unik innen for hver `systembruker` (produsent). Det er denne `eventID`-en som benyttes for å deaktivere eventer som er utført. Dette gjøres ved å sende et event av typen done, med referanse til det eventet som ikke skal vises på DittNAV lengre. Feltet har en begrensning på 50 tegn og kan ikke være null. 

@@ -1,23 +1,26 @@
-## Kafka key
+# Feltbeskrivelser
+
+## Nokkel (Kafka key)
 Se [Nokkel](../fellesinfo.md)
 
 
-## Kafka value
+## Beskjed (Kafka value)
+Beskrivelse av feltene til eventet `Beskjed`.
 
 ### tidspunkt
 Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig.
 
 ### fodselsnummer
-Fødselsnummeret til brukeren som eventet tilhører.
+Fødselsnummeret til brukeren som eventet tilhører. Feltet har en begrensning på 11 tegn og kan ikke være null. Validering skjer [her](https://github.com/navikt/dittnav-event-aggregator/blob/ee610abdf1040199ba65ede76eda1c33b42acffa/src/main/kotlin/no/nav/personbruker/dittnav/eventaggregator/beskjed/Beskjed.kt#L51).
 
 ### grupperingsId
-Feltet grupperingsId brukes for å kunne samle alle eventer som hører til en sak, søknad eller et dokument. Dette er typisk en saksId, søknadsId eller dokumentId, men dere velger selv hvilken verdi dere putter der. Men det er viktig at det er samme verdi for alle eventer som skal grupperes sammen. Typisk bruk for dette feltet vil være oppbygging av tidslinjer.
+Feltet grupperingsId brukes for å kunne samle alle eventer som hører til en sak, søknad eller et dokument. Dette er typisk en saksId, søknadsId eller dokumentId, men dere velger selv hvilken verdi dere putter der. Men det er viktig at det er samme verdi for alle eventer som skal grupperes sammen. Typisk bruk for dette feltet vil være oppbygging av tidslinjer. Feltet har en begrensning på 100 tegn og kan ikke være null. Validering skjer [her](https://github.com/navikt/dittnav-event-aggregator/blob/ee610abdf1040199ba65ede76eda1c33b42acffa/src/main/kotlin/no/nav/personbruker/dittnav/eventaggregator/beskjed/Beskjed.kt#L52).
 
 ### tekst
-Dette er teksten faktisk vises i eventet. Det er ikke noen støtte for å formatere teksten som settes i dette feltet.
+Dette er teksten som faktisk vises i eventet. Det er ikke noen støtte for å formatere teksten som settes i dette feltet. Feltet har en begrensning på 300 tegn og kan ikke være null. Validering skjer [her](https://github.com/navikt/dittnav-event-aggregator/blob/ee610abdf1040199ba65ede76eda1c33b42acffa/src/main/kotlin/no/nav/personbruker/dittnav/eventaggregator/beskjed/Beskjed.kt#L53).
 
 ### link
-Dette er lenken som blir aktivert i det en bruker trykker på selve eventet. En lenke må være en komplett URL, inkludert `https` protokoll.
+Dette er lenken som blir aktivert i det en bruker trykker på selve eventet. En lenke må være en komplett URL, inkludert `https` protokoll. Feltet har en begrensning på 200 tegn. Produsenten kan sende inn en tom String. Da vil ikke `link` være synlig for sluttbruker. Validering skjer [her](https://github.com/navikt/dittnav-event-aggregator/blob/ee610abdf1040199ba65ede76eda1c33b42acffa/src/main/kotlin/no/nav/personbruker/dittnav/eventaggregator/beskjed/Beskjed.kt#L54).
 
 ### sikkerhetsnivaa
 Angir sikkerhetsnivået for informasjonen som eventet innholder.
