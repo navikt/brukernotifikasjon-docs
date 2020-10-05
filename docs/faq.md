@@ -2,13 +2,13 @@
 
 ## Kan eventer reaktiveres?
 Nei, eventer kan ikke reaktiveres. Hvis det først har blitt sendt minst ett done-event for en brukernotifikasjon så vil 
-eventet blir satt som inaktivt.
+eventet bli satt inaktivt.
 
 ### Hvordan oppnå samme effekt
-Send et done-event for eventer man vil dekativere. Send deretter en ny brukernotifikasjon.
+Send et done-event for eventer man vil deaktivere. Send deretter en ny brukernotifikasjon.
 
 ## Hva er `grupperingsid`?
-Feltet brukes til vise at eventer naturlig hører sammen, for eksempel at de tilhører samme sak, søknad, etc. Hvis flere eventer fra 
+Feltet brukes til å vise at eventer naturlig hører sammen, for eksempel at de tilhører samme sak, søknad, etc. Hvis flere eventer fra 
 samme produsent, tilhørende samme bruker, har samme grupperingsid vil de kunne grupperes sammen.
 Dette kan for eksempel visualiseres ved hjelp av en [tidslinje](./tidslinjer.md). 
 
@@ -29,15 +29,15 @@ Ja. Event-id-en som settes må være unik pr. systembruker og eventtype. Se fler
 
 ## Kan det sendes varsel på SMS og/eller e-post til bruker?
 Det er foreløpig ikke støtte for dette, men funksjonaliteten er på vei. Det vil da bli introdusert et nytt felt, som kan brukes for å bestemme hvorvidt det skal sendes
-varsel til bruker. Ta kontakt med #team-personbruker for nærmere informasjon om dette.
+varsel til bruker eller ikke. Følg med i #brukernotifikasjoner på Slack for nærmere informasjon om dette.
 
 ## Hvorfor kan vi ikke skrive mer tekst i eventene?
-Tanken er at eventene gi bruker beskjed om at noe har skjedd/noe må gjøres, men at handlingen hovedsakelig skal skje i de respektive innsynsløsninger og domener. Visning
+Tanken er at eventene gir bruker beskjed om at noe har skjedd/noe må gjøres, men at handlingen hovedsakelig skal skje i de respektive innsynsløsninger og domener. Visning
 av større mengder domenespesifikk tekst i Ditt NAV er ikke hensiktsmessig, og bryter med tanken om at Ditt NAV skal være en felles inngangsport til de ulike tjenestene.
 
 ## Hvem eier dataene som ligger lagret i eventene?
 Kafka-topicene eies av #team-personbruker, men den enkelte produsent har selv ansvar for innholdet i det enkelte event. 
-For å få skrivetilgang må man som produsent bekrefte at man har forstått hva dette ansvaret innebærer. Se med under [Komme i gang](./komme_i_gang.md)
+For å få skrivetilgang må man som produsent bekrefte at man har forstått hva dette ansvaret innebærer. Se mer under [Komme i gang](./komme_i_gang.md)
 
 ## Kan vi bruke aktørid istedenfor fødselsnummer for å identifisere brukeren?
 Nei, vi støtter kun fødselsnummer som identifikator for en bruker.
