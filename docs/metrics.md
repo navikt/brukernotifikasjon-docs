@@ -1,5 +1,5 @@
 # Metrics
-DittNAV teamet har laget et par granfa-dashbards som kan brukes for å verifisere at alt fungerer som det skal.
+DittNAV-teamet har laget et par granfa-dashbards som kan brukes for å verifisere at alt fungerer som det skal.
 
 ## Prosessering
 Viser info om den løpende prosesseringen av eventer:
@@ -22,7 +22,7 @@ Alle eventer sett under ett:
 [Dashboardet finnes her.](https://grafana.adeo.no/d/ZpeXY3mGz/dittnav-brukernotifikasjoner?orgId=1&refresh=5m)
 
 ### Oversikt per team
-Alle evneter gruppert per systembruker/produsent:
+Alle eventer gruppert per systembruker/produsent:
 
 * Info om eventuell diff, mellom hva som finnes av eventer på kafka-topic-ene og hva som finnes i cache-en. 
 * Visualisert per eventtype.
