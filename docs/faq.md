@@ -41,3 +41,6 @@ For å få skrivetilgang må man som produsent bekrefte at man har forstått hva
 
 ## Kan vi bruke aktørid istedenfor fødselsnummer for å identifisere brukeren?
 Nei, vi støtter kun fødselsnummer som identifikator for en bruker.
+
+## Hva er retention-tiden på brukernotfikasjon-topicene?
+Alle brukernotifikasjons-topic-ene har uendelig retention.
