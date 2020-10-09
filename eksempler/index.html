@@ -674,12 +674,10 @@
 <p>URL-en til Kafkas schema-register må spesifiseres, dette gjøres i din kafka-producer-config f.eks. slik:</p>
 <pre><code>put(KafkaAvroDeserializerConfig.SCHEMA_REGISTRY_URL_CONFIG, env.schemaRegistryUrl)
 </code></pre>
-
 <p>riktig <a href="https://confluence.adeo.no/pages/viewpage.action?pageId=239339073">URL finnes her</a>.
 Deretter kan eventer sendes ved å f.eks. kalle:</p>
 <pre><code>producer.send(ProducerRecord(topicNavn, nokkel, oppgaveEvent))
 </code></pre>
-
 <p>, se <a href="https://github.com/navikt/brukernotifikasjoner-demo-producer">her</a> for mer info. </p>
 <h4 id="dittnav-event-test-producer">DittNAV-event-test-producer</h4>
 <p><a href="https://github.com/navikt/dittnav-event-test-producer">Denne</a> kan også brukes som inspirasjon for å koble seg på kafka. Vi bruker denne appen til å legge test eventer på kafka. For å kjøre vår test-app må du sette opp hele <a href="https://github.com/navikt/dittnav-docker-compose">riggen vår</a> med docker-compose.

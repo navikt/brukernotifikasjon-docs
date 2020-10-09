@@ -744,7 +744,6 @@ Done done = createDone();
 final ProducerRecord&lt;Nokkel, Done&gt; record = new ProducerRecord&lt;&gt;(topicnavn, nokkel, done);
 producer.send(record);
 </code></pre>
-
 <p>Samme prinsipp som <code>Beskjed</code> og <code>Oppgave</code>. Se et eksempel på <code>Beskjed</code> <a href="https://github.com/navikt/brukernotifikasjoner-demo-producer/blob/master/src/main/java/no/nav/brukernotifikasjon/BeskjedProducer.java">her</a>.</p>
 <h2 id="kotlin">Kotlin</h2>
 <pre><code>val topicnavn : String = &quot;aapen-brukernotifikasjon-nyDone-v1-testing&quot;
@@ -753,7 +752,6 @@ val event : Done = createDoneForIdent(innloggetBruker, dto)
 val producerRecord = ProducerRecord(topicName, key, event)
 kafkaProducer.send(producerRecord)
 </code></pre>
-
 <p>Se et komplett eksempel <a href="https://github.com/navikt/dittnav-event-test-producer/blob/master/src/main/kotlin/no/nav/personbruker/dittnav/eventtestproducer/done/DoneProducer.kt">her</a>.</p>
                 
               
