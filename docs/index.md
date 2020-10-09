@@ -11,4 +11,4 @@ Deaktiverte eventer vil fortsatt være tilgjengelig fra historikk-visningen på 
 
 Brukernotifikasjoner kan også brukes til å bygge opp tidslinjer, ved at eventer som naturlig hører sammen blir gruppert i en tidslinje.
 
-Les mer om eventtypene [her](eventtyper/fellesinfo.md).
+Les mer om eventtyper [her](eventtyper/fellesinfo.md) eller kom i gang med brukernotifikasjoner [her](./komme_i_gang.md).
