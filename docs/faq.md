@@ -16,6 +16,10 @@ Dette kan for eksempel visualiseres ved hjelp av en [tidslinje](./tidslinjer.md)
 Nei. Dersom oppgaven eller beskjeden i et event skal markeres som utført, lest,
 ikke lenger relevant o.l., skal det sendes et [done-event](./eventtyper/done/beskrivelse.md).
 
+##Vi har sendt event med feil lenke/tekst. Hva gjør vi?
+Dere kan selv sende [done-event](./eventtyper/done/beskrivelse.md). Da vil beskjeden/oppgaven bli deaktivert og dere kan sende ett nytt event med rett info. 
+Eventet vil være synlig på historikksiden så det kan være lurt å skrive for eksempel "Beklager, det var feil lenke i den forrige beskjeden", så sluttbruker ikke blir forvirret med to like beskjeder/oppgaver på historikksiden.
+
 ## Hvis vi sender to eventer med samme nøkkel, vil nyeste event overskrive det opprinnelige?
 Nei, siden vi allerede har et event med samme nøkkel vil det siste eventet ikke bli skrevet til vår event-cache, og dermed heller ikke vist på Ditt NAV.
 Noe av grunnen til det er at vi ønsker å kunne bygge opp tidslinjer basert på alt som har skjedd innenfor den samme grupperingsId-en. 
