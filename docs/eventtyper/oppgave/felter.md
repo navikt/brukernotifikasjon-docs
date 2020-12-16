@@ -5,6 +5,7 @@ Se [Nokkel](../fellesinfo.md)
 
 ### Oppgave (Kafka value)
 Beskrivelse av feltene til eventet `Oppgave`.
+Husk å bruk `builder-n` vår for å valider alle event. Les mer om builder-n [her](../builder.md).
 
 #### tidspunkt
 Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig.
