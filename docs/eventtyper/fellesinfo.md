@@ -1,6 +1,8 @@
 Alle brukernotifikasjoner består av en `key` og en `value` som legges på kafka-topicene. Alle eventtypene bruker [Nokkel]() som key, 
 mens hver eventtype har sin egen value. Se egene underkapitler for dette ([Beskjed](./beskjed/beskrivelse.md), [Oppgave](./oppgave/beskrivelse.md), [Done](./done/beskrivelse.md) og [Statusoppdatering](./statusoppdatering/beskrivelse.md)).
 
+Husk å bruk `builder-n` vår for å valider alle event. Les mer om dette [her](builder.md).
+
 ## Hva gjør et event unikt?
 
 

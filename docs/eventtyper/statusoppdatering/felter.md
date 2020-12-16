@@ -5,6 +5,7 @@ Se [Nokkel](../fellesinfo.md)
 
 ## Statusoppdatering (Kafka value)
 Beskrivelse av feltene til eventet `Statusoppdatering`.
+Husk å bruk `builder-n` vår for å validere alle event. Les mer om builder-n [her](../builder.md).
 
 ### tidspunkt
 Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig.
