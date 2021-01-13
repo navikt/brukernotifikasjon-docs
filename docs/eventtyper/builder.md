@@ -1,8 +1,8 @@
 # Builder
 
-Alle produsenter oppfordres sterkt til å bruke `Builder-ene` til å opprette eventer. Grunnen til dette er at 
-builder-ene vil validere alle feltene, før et event opprettes. Dette er de samme valideringsreglene som brukes av 
-DittNAV ved innlesing fra kafka, før eventene vises til sluttbruker. Ved å bruke builder-ene minimeres sjansene for at
+Alle produsenter oppfordres sterkt til å bruke `builderene` til å opprette eventer. Grunnen til dette er at 
+builderene vil validere alle feltene, før et event opprettes. Dette er de samme valideringsreglene som brukes av 
+DittNAV ved innlesing fra kafka, før eventene vises til sluttbruker. Ved å bruke builderene minimeres sjansene for at
 eventene blir avvist av DittNAV pga valideringsfeil. 
 
 Hvis det forsøkes å bygge et event med ugyldige feltverdier, så vil builderen kasse en `FieldValidationException` ved kallet 
