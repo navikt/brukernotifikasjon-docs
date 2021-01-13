@@ -5,7 +5,7 @@ Se [Nokkel](../fellesinfo.md)
 
 ## Done (Kafka value)
 Beskrivelse av feltene til eventet `done`.
-Husk å bruk `builder-n` vår for å validere alle event. Les mer om builder-n [her](../builder.md).
+Husk å valider alle event med `builder-n` vår. Les mer om dette [her](../builder.md).
 
 ### tidspunkt
 Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig.

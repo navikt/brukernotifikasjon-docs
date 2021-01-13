@@ -16,7 +16,7 @@ Se valideringsregler [her](https://github.com/navikt/brukernotifikasjon-schemas/
 
 ## Kode eksempel 
 ```
-BeskjedBuilder builder = getBuilderWithValues(); //opprett ny BeskjedBuilder()
+BeskjedBuilder builder = getBuilderWithValues();
 Beskjed beskjed = builder.build(); //Valider alle felt med build()
 
 private BeskjedBuilder getBuilderWithValues() {
