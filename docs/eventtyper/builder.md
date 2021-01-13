@@ -1,9 +1,12 @@
 # Builder
 
-Alle produsenter skal bruke `Builder-n` til å validere event. 
+Alle produsenter oppfordres sterkt til å bruke `Builder-ene` til å opprette eventer. Grunnen til dette er at 
+builder-ene vil validere alle feltene, før et event opprettes. Dette er de samme valideringsreglene som brukes av 
+DittNAV ved innlesing fra kafka, før eventene vises til sluttbruker. Ved å bruke builder-ene minimeres sjansene for at
+eventene blir avvist av DittNAV pga valideringsfeil. 
 
-Her kan dere new-e opp objekter og validere felt.
-Hvis felt ikke tilfredstiller `Builder-en` kaster den en `FieldValidationException`. Her får dere informasjon om hvilket felt som feilet og hva som skjedde.
+Hvis det forsøkes å bygge et event med ugyldige feltverdier, så vil builderen kasse en `FieldValidationException` ved kallet 
+til `*.build()`. Denne exception-en vil gi informasjon om om hvilket felt som feilet og hva som skjedde.
 
 Se valideringsregler [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/util/ValidationUtil.java)
 
@@ -17,7 +20,7 @@ Se valideringsregler [her](https://github.com/navikt/brukernotifikasjon-schemas/
 ## Kode eksempel 
 ```
 BeskjedBuilder builder = getBuilderWithValues();
-Beskjed beskjed = builder.build(); //Valider alle felt med build()
+Beskjed beskjed = builder.build(); // Alle felter valideres, for eventet eventuelt blir opprettet
 
 private BeskjedBuilder getBuilderWithValues() {
     return new BeskjedBuilder()
