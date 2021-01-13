@@ -6,6 +6,7 @@ Se [Nokkel](../fellesinfo.md)
 
 ## Beskjed (Kafka value)
 Beskrivelse av feltene til eventet `Beskjed`.
+Husk å validere alle eventene med `builderene` våre. Les mer om dette [her](../builder.md).
 
 ### tidspunkt
 Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig.
