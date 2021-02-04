@@ -12,7 +12,7 @@ Produsenten må selv vurdere om det er behov for å agere på hendelsen. Les mer
 
 Generell informasjon:
 
-* Det bestilles varsel til både SMS og epost. Team Dokumentløsninger henter kontaktinformasjonen til sluttbruker og det er dette som til slutt avgjør hvilken kanal det kan varsles i. Les mer om dette [her]()(?).
+* Det bestilles varsel til både SMS og epost. Team Dokumentløsninger henter kontaktinformasjonen til sluttbruker og det er dette som til slutt avgjør hvilken kanal det kan varsles i. Les mer om dette [her](https://confluence.adeo.no/display/BOA/For+Konsumenter).
 * All SMS og e-post får en standard tekst. Se SMS-tekst her [beskjed](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/sms_beskjed.txt) /[oppgave](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/sms_oppgave.txt) og epost-tekst her [beskjed](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_beskjed.txt) /[oppgave](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_oppgave.txt). 
 * For oppgave-eventer sender Team Dokumentløsninger kun én re-notifikasjon på nytt (SMS/epost)
     - Det er 7 dager mellom notifikasjon og re-notifikasjonen blir sendt.
