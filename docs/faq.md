@@ -31,10 +31,6 @@ Se ellers flere detaljer under ["Metrics"](./metrics.md)
 ## Må eventid-en være unik?
 Ja. Event-id-en som settes må være unik pr. systembruker og eventtype. Se flere detaljer under [Eventtyper](./eventtyper/fellesinfo.md)
 
-## Kan det sendes varsel på SMS og/eller e-post til bruker?
-Det er foreløpig ikke støtte for dette, men funksjonaliteten er på vei. Det vil da bli introdusert et nytt felt, som kan brukes for å bestemme hvorvidt det skal sendes
-varsel til bruker eller ikke. Følg med i #brukernotifikasjoner på Slack for nærmere informasjon om dette.
-
 ## Hvorfor kan vi ikke skrive mer tekst i eventene?
 Tanken er at eventene gir bruker beskjed om at noe har skjedd/noe må gjøres, men at handlingen hovedsakelig skal skje i de respektive innsynsløsninger og domener. Visning
 av større mengder domenespesifikk tekst i Ditt NAV er ikke hensiktsmessig, og bryter med tanken om at Ditt NAV skal være en felles inngangsport til de ulike tjenestene.
@@ -48,3 +44,12 @@ Nei, vi støtter kun fødselsnummer som identifikator for en bruker.
 
 ## Hva er retention-tiden på brukernotfikasjon-topicene?
 Alle brukernotifikasjons-topic-ene har uendelig retention.
+
+## Kan det sendes varsel på SMS og/eller e-post til bruker samtidig som det opprettes Brukernotifikasjon på Ditt NAV?
+Ja. Se mer informasjon om dette under [Ekstern varsling](./eksternvarsling.md)
+
+## Kan vi sette vår egen tekst i varsel på SMS og e-post?
+Nei. Det sendes en pre-definert standard tekst, som ikke avslører noen sensitiv informasjon om hva brukerens varsel gjelder. Ta kontakt med oss dersom ditt team har et spesielt behov for å kunne sette deres egen varseltekst.
+
+## Kan vi sende lenker i varselene?
+Nei. Teksten i varslene inneholder informasjon til brukeren om å logge seg inn på Ditt NAV, men inneholder ikke lenker brukeren kan trykke på.
