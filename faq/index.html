@@ -317,13 +317,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kan-det-sendes-varsel-pa-sms-ogeller-e-post-til-bruker" class="md-nav__link">
-    Kan det sendes varsel på SMS og/eller e-post til bruker?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#hvorfor-kan-vi-ikke-skrive-mer-tekst-i-eventene" class="md-nav__link">
     Hvorfor kan vi ikke skrive mer tekst i eventene?
   </a>
@@ -347,6 +340,27 @@
         <li class="md-nav__item">
   <a href="#hva-er-retention-tiden-pa-brukernotfikasjon-topicene" class="md-nav__link">
     Hva er retention-tiden på brukernotfikasjon-topicene?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kan-det-sendes-varsel-pa-sms-ogeller-e-post-til-bruker-samtidig-som-det-opprettes-brukernotifikasjon-pa-ditt-nav" class="md-nav__link">
+    Kan det sendes varsel på SMS og/eller e-post til bruker samtidig som det opprettes Brukernotifikasjon på Ditt NAV?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kan-vi-sette-var-egen-tekst-i-varsel-pa-sms-og-e-post" class="md-nav__link">
+    Kan vi sette vår egen tekst i varsel på SMS og e-post?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kan-vi-sende-lenker-i-varselene" class="md-nav__link">
+    Kan vi sende lenker i varselene?
   </a>
   
 </li>
@@ -872,13 +886,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kan-det-sendes-varsel-pa-sms-ogeller-e-post-til-bruker" class="md-nav__link">
-    Kan det sendes varsel på SMS og/eller e-post til bruker?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#hvorfor-kan-vi-ikke-skrive-mer-tekst-i-eventene" class="md-nav__link">
     Hvorfor kan vi ikke skrive mer tekst i eventene?
   </a>
@@ -902,6 +909,27 @@
         <li class="md-nav__item">
   <a href="#hva-er-retention-tiden-pa-brukernotfikasjon-topicene" class="md-nav__link">
     Hva er retention-tiden på brukernotfikasjon-topicene?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kan-det-sendes-varsel-pa-sms-ogeller-e-post-til-bruker-samtidig-som-det-opprettes-brukernotifikasjon-pa-ditt-nav" class="md-nav__link">
+    Kan det sendes varsel på SMS og/eller e-post til bruker samtidig som det opprettes Brukernotifikasjon på Ditt NAV?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kan-vi-sette-var-egen-tekst-i-varsel-pa-sms-og-e-post" class="md-nav__link">
+    Kan vi sette vår egen tekst i varsel på SMS og e-post?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kan-vi-sende-lenker-i-varselene" class="md-nav__link">
+    Kan vi sende lenker i varselene?
   </a>
   
 </li>
@@ -946,9 +974,6 @@ Noe av grunnen til det er at vi ønsker å kunne bygge opp tidslinjer basert på
 Se ellers flere detaljer under <a href="../metrics/">"Metrics"</a></p>
 <h2 id="ma-eventid-en-vre-unik">Må eventid-en være unik?</h2>
 <p>Ja. Event-id-en som settes må være unik pr. systembruker og eventtype. Se flere detaljer under <a href="../eventtyper/fellesinfo/">Eventtyper</a></p>
-<h2 id="kan-det-sendes-varsel-pa-sms-ogeller-e-post-til-bruker">Kan det sendes varsel på SMS og/eller e-post til bruker?</h2>
-<p>Det er foreløpig ikke støtte for dette, men funksjonaliteten er på vei. Det vil da bli introdusert et nytt felt, som kan brukes for å bestemme hvorvidt det skal sendes
-varsel til bruker eller ikke. Følg med i #brukernotifikasjoner på Slack for nærmere informasjon om dette.</p>
 <h2 id="hvorfor-kan-vi-ikke-skrive-mer-tekst-i-eventene">Hvorfor kan vi ikke skrive mer tekst i eventene?</h2>
 <p>Tanken er at eventene gir bruker beskjed om at noe har skjedd/noe må gjøres, men at handlingen hovedsakelig skal skje i de respektive innsynsløsninger og domener. Visning
 av større mengder domenespesifikk tekst i Ditt NAV er ikke hensiktsmessig, og bryter med tanken om at Ditt NAV skal være en felles inngangsport til de ulike tjenestene.</p>
@@ -959,6 +984,12 @@ For å få skrivetilgang må man som produsent bekrefte at man har forstått hva
 <p>Nei, vi støtter kun fødselsnummer som identifikator for en bruker.</p>
 <h2 id="hva-er-retention-tiden-pa-brukernotfikasjon-topicene">Hva er retention-tiden på brukernotfikasjon-topicene?</h2>
 <p>Alle brukernotifikasjons-topic-ene har uendelig retention.</p>
+<h2 id="kan-det-sendes-varsel-pa-sms-ogeller-e-post-til-bruker-samtidig-som-det-opprettes-brukernotifikasjon-pa-ditt-nav">Kan det sendes varsel på SMS og/eller e-post til bruker samtidig som det opprettes Brukernotifikasjon på Ditt NAV?</h2>
+<p>Ja. Se mer informasjon om dette under <a href="../eksternvarsling/">Ekstern varsling</a></p>
+<h2 id="kan-vi-sette-var-egen-tekst-i-varsel-pa-sms-og-e-post">Kan vi sette vår egen tekst i varsel på SMS og e-post?</h2>
+<p>Nei. Det sendes en pre-definert standard tekst, som ikke avslører noen sensitiv informasjon om hva brukerens varsel gjelder.</p>
+<h2 id="kan-vi-sende-lenker-i-varselene">Kan vi sende lenker i varselene?</h2>
+<p>Nei. Teksten i varslene inneholder informasjon til brukeren om å logge seg inn på Ditt NAV, men inneholder ikke lenker brukeren kan trykke på.</p>
                 
               
               
