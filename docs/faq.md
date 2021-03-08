@@ -49,7 +49,7 @@ Alle brukernotifikasjons-topic-ene har uendelig retention.
 Ja. Se mer informasjon om dette under [Ekstern varsling](./eksternvarsling.md)
 
 ## Kan vi sette vår egen tekst i varsel på SMS og e-post?
-Nei. Det sendes en pre-definert standard tekst, som ikke avslører noen sensitiv informasjon om hva brukerens varsel gjelder. Ta kontakt med oss dersom ditt team har et spesielt behov for å kunne sette deres egen varseltekst.
+Nei. Det sendes en pre-definert standard tekst, som ikke avslører noen sensitiv informasjon om hva brukerens varsel gjelder.
 
 ## Kan vi sende lenker i varselene?
 Nei. Teksten i varslene inneholder informasjon til brukeren om å logge seg inn på Ditt NAV, men inneholder ikke lenker brukeren kan trykke på.
