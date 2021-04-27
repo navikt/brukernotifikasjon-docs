@@ -917,7 +917,7 @@
 <p>Beskrivelse av feltene til eventet <code>Beskjed</code>.
 Husk å validere alle eventene med <code>builderene</code> våre. Les mer om dette <a href="../../../builder/">her</a>.</p>
 <h3 id="tidspunkt">tidspunkt</h3>
-<p>Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig.</p>
+<p>Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig. Bruk UTC som tidssone.</p>
 <h3 id="fodselsnummer">fodselsnummer</h3>
 <p>Fødselsnummeret til brukeren som eventet tilhører. Feltet har en begrensning på 11 tegn og kan ikke være null. Validering skjer <a href="https://github.com/navikt/dittnav-event-aggregator/blob/ee610abdf1040199ba65ede76eda1c33b42acffa/src/main/kotlin/no/nav/personbruker/dittnav/eventaggregator/beskjed/Beskjed.kt#L51">her</a>.</p>
 <h3 id="grupperingsid">grupperingsId</h3>
@@ -930,9 +930,8 @@ Husk å validere alle eventene med <code>builderene</code> våre. Les mer om det
 <p>Angir sikkerhetsnivået for informasjonen som eventet innholder.
 DittNAV støtter at en bruker er innlogget på nivå 3, hvis denne brukeren har eventer med nivå 4 så vil disse eventene bli "grået ut". Brukeren ser bare hvilken type event dette er, men ikke noe av innholdet. For å se innholdet må brukeren steppe opp til et høyere innloggingsnivå.</p>
 <h3 id="synligfremtil">synligFremTil</h3>
-<p>Et tidspunkt på når eventet ikke skal være synlig mer, f.eks beskjeden skal kun være synlig 7 dager. SynligFramTil = null -&gt; synlig for alltid, med mindre brukeren selv krysser den ut fra forsiden av DittNAV.</p>
+<p>Et tidspunkt på når eventet ikke skal være synlig mer, f.eks beskjeden skal kun være synlig 7 dager. SynligFramTil = null -&gt; synlig for alltid, med mindre brukeren selv krysser den ut fra forsiden av DittNAV. Bruk UTC som tidssone.</p>
 <h3 id="eksternvarsling">eksternvarsling</h3>
-<p><code>!! NB !! Betaversjon !! Snakk med DittNav før du bruker dette feltet.</code></p>
 <p>Default verdien til dette feltet er <code>false</code>, men hvis det blir satt til <code>true</code> vil beskjed-en bli varslet på SMS/epost. Les mer om eksternvarsling <a href="../../../eksternvarsling/">her</a>.</p>
 <h4 id="schemas">Schemas</h4>
 <p>Du finner <code>Beskjed-schemas</code> <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/beskjed.avsc">her</a>.</p>

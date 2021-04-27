@@ -917,7 +917,7 @@
 <p>Beskrivelse av feltene til eventet <code>Statusoppdatering</code>.
 Husk å validere alle eventene med <code>builderene</code> våre. Les mer om dette <a href="../../../builder/">her</a>.</p>
 <h3 id="tidspunkt">tidspunkt</h3>
-<p>Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig.</p>
+<p>Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig. Bruk UTC som tidssone.</p>
 <h3 id="fodselsnummer">fodselsnummer</h3>
 <p>Fødselsnummeret til brukeren som eventet tilhører. Feltet har en begrensning på 11 tegn og kan ikke være null. Validering skjer <a href="https://github.com/navikt/dittnav-event-aggregator/blob/ee610abdf1040199ba65ede76eda1c33b42acffa/src/main/kotlin/no/nav/personbruker/dittnav/eventaggregator/statusoppdatering/Statusoppdatering.kt#L51">her</a>.</p>
 <h3 id="grupperingsid">grupperingsId</h3>

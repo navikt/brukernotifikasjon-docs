@@ -216,42 +216,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Ekstern varsling
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
     <a href="./" title="Ekstern varsling" class="md-nav__link md-nav__link--active">
       Ekstern varsling
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Innholdsfortegnelse">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Innholdsfortegnelse
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#nb-betaversjon-snakk-med-team-dittnav-fr-du-bruker-dette-feltet" class="md-nav__link">
-    NB !! Betaversjon !! Snakk med Team DittNav før du bruker dette feltet.
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -711,23 +678,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Innholdsfortegnelse
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#nb-betaversjon-snakk-med-team-dittnav-fr-du-bruker-dette-feltet" class="md-nav__link">
-    NB !! Betaversjon !! Snakk med Team DittNav før du bruker dette feltet.
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -743,7 +693,6 @@
                 
                 
                 <h1 id="ekstern-varsling">Ekstern varsling</h1>
-<h4 id="nb-betaversjon-snakk-med-team-dittnav-fr-du-bruker-dette-feltet"><code>NB !! Betaversjon !! Snakk med Team DittNav før du bruker dette feltet.</code></h4>
 <p>Det er mulig å sende ekstern varsling på e-post og/eller SMS til sluttbruker om ny beskjed eller oppgave på forsiden av Ditt NAV.</p>
 <p>Skjemaene for Beskjed og Oppgave inneholder et felt som brukes for å indikere dette, <code>eksternVarsling</code>. Feltet er ikke påkrevet, og har default-verdien <code>false</code>. Settes dette til <code>true</code> vil det bestilles varsling.
 Rent praktisk foregår dette ved at DittNAV da oppretter et Kafka-event på en topic tilhørende Team Dokumentløsninger. Det er Team Dokument som står for selve varselutsendingen, gjennom tjenesten doknotifikasjon.</p>
