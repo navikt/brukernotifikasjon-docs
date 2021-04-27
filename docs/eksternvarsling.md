@@ -1,7 +1,5 @@
 # Ekstern varsling
 
-#### `NB !! Betaversjon !! Snakk med Team DittNav før du bruker dette feltet.`
-
 Det er mulig å sende ekstern varsling på e-post og/eller SMS til sluttbruker om ny beskjed eller oppgave på forsiden av Ditt NAV.
 
 Skjemaene for Beskjed og Oppgave inneholder et felt som brukes for å indikere dette, `eksternVarsling`. Feltet er ikke påkrevet, og har default-verdien `false`. Settes dette til `true` vil det bestilles varsling.
