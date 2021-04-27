@@ -9,7 +9,7 @@ Beskrivelse av feltene til eventet `Beskjed`.
 Husk å validere alle eventene med `builderene` våre. Les mer om dette [her](../../builder.md).
 
 ### tidspunkt
-Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig.
+Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig. Bruk UTC som tidssone.
 
 ### fodselsnummer
 Fødselsnummeret til brukeren som eventet tilhører. Feltet har en begrensning på 11 tegn og kan ikke være null. Validering skjer [her](https://github.com/navikt/dittnav-event-aggregator/blob/ee610abdf1040199ba65ede76eda1c33b42acffa/src/main/kotlin/no/nav/personbruker/dittnav/eventaggregator/beskjed/Beskjed.kt#L51).
@@ -28,11 +28,9 @@ Angir sikkerhetsnivået for informasjonen som eventet innholder.
 DittNAV støtter at en bruker er innlogget på nivå 3, hvis denne brukeren har eventer med nivå 4 så vil disse eventene bli "grået ut". Brukeren ser bare hvilken type event dette er, men ikke noe av innholdet. For å se innholdet må brukeren steppe opp til et høyere innloggingsnivå.
 
 ### synligFremTil
-Et tidspunkt på når eventet ikke skal være synlig mer, f.eks beskjeden skal kun være synlig 7 dager. SynligFramTil = null -> synlig for alltid, med mindre brukeren selv krysser den ut fra forsiden av DittNAV.
+Et tidspunkt på når eventet ikke skal være synlig mer, f.eks beskjeden skal kun være synlig 7 dager. SynligFramTil = null -> synlig for alltid, med mindre brukeren selv krysser den ut fra forsiden av DittNAV. Bruk UTC som tidssone.
 
 ### eksternvarsling 
-`!! NB !! Betaversjon !! Snakk med DittNav før du bruker dette feltet.`
-
 Default verdien til dette feltet er `false`, men hvis det blir satt til `true` vil beskjed-en bli varslet på SMS/epost. Les mer om eksternvarsling [her](../../eksternvarsling.md).
 
 

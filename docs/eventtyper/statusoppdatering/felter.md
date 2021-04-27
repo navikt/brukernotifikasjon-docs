@@ -8,7 +8,7 @@ Beskrivelse av feltene til eventet `Statusoppdatering`.
 Husk å validere alle eventene med `builderene` våre. Les mer om dette [her](../../builder.md).
 
 ### tidspunkt
-Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig.
+Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig. Bruk UTC som tidssone.
 
 ### fodselsnummer
 Fødselsnummeret til brukeren som eventet tilhører. Feltet har en begrensning på 11 tegn og kan ikke være null. Validering skjer [her](https://github.com/navikt/dittnav-event-aggregator/blob/ee610abdf1040199ba65ede76eda1c33b42acffa/src/main/kotlin/no/nav/personbruker/dittnav/eventaggregator/statusoppdatering/Statusoppdatering.kt#L51).
