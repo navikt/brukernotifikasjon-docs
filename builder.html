@@ -15,7 +15,7 @@
     
     
       
-        <title>Brukernotifikasjon-docs</title>
+        <title>Builder - Brukernotifikasjon-docs</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduksjon" class="md-skip">
+        <a href="#builder" class="md-skip">
           Gå til innhold
         </a>
       
@@ -87,7 +87,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Introduksjon
+              Builder
             
           </span>
         </div>
@@ -158,20 +158,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="index.html" title="Introduksjon" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="index.html" title="Introduksjon" class="md-nav__link">
       Introduksjon
     </a>
-    
   </li>
 
     
@@ -191,11 +182,60 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="builder.html" title="Builder" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Builder
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="builder.html" title="Builder" class="md-nav__link md-nav__link--active">
       Builder
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Innholdsfortegnelse">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Innholdsfortegnelse
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#validering" class="md-nav__link">
+    Validering
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kode-eksempel" class="md-nav__link">
+    Kode eksempel
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -678,6 +718,30 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Innholdsfortegnelse
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#validering" class="md-nav__link">
+    Validering
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kode-eksempel" class="md-nav__link">
+    Kode eksempel
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -692,14 +756,38 @@
                   
                 
                 
-                <h1 id="introduksjon">Introduksjon</h1>
-<p>Brukernotifikasjoner gjør det mulig for andre team å sende Beskjeder eller Oppgaver til en spesifikk bruker, og få vist 
-dette fram på forsiden av DittNAV.</p>
-<p>Dette gjøres gjennom at det blir publisert et event på et sett med topic-er, deretter vil DittNAV ta seg av å vise dette for sluttbruker.</p>
-<p>Teamene kan selv deaktivere eventene igjen, hvis eventene ikke er relevante lengre.</p>
-<p>Deaktiverte eventer vil fortsatt være tilgjengelig fra historikk-visningen på DittNAV.</p>
-<p>Brukernotifikasjoner kan også brukes til å bygge opp tidslinjer, ved at eventer som naturlig hører sammen blir gruppert i en tidslinje.</p>
-<p>Les mer om eventtyper <a href="eventtyper/fellesinfo.html">her</a> eller kom i gang med brukernotifikasjoner <a href="komme_i_gang.html">her</a>.</p>
+                <h1 id="builder">Builder</h1>
+<p>Alle produsenter oppfordres sterkt til å bruke <code>builderene</code> til å opprette eventer. Grunnen til dette er at 
+builderene vil validere alle feltene, før et event opprettes. Dette er de samme valideringsreglene som brukes av 
+DittNAV ved innlesing fra kafka, før eventene vises til sluttbruker. Ved å bruke builderene minimeres sjansene for at
+eventene blir avvist av DittNAV pga valideringsfeil. </p>
+<p>Hvis det forsøkes å bygge et event med ugyldige feltverdier, så vil builderen kasse en <code>FieldValidationException</code> ved kallet 
+til <code>*.build()</code>. Denne exception-en vil gi informasjon om om hvilket felt som feilet og hva som skjedde.</p>
+<p>Se valideringsregler <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/util/ValidationUtil.java">her</a></p>
+<h3 id="validering">Validering</h3>
+<ul>
+<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/NokkelBuilder.java#L16">Nokkel</a></li>
+<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/BeskjedBuilder.java#L54">Beskjed</a></li>
+<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/OppgaveBuilder.java#L48">Oppgave</a></li>
+<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/DoneBuilder.java#L29">Done</a></li>
+<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/StatusoppdateringBuilder.java#L61">Statusoppdatering</a></li>
+</ul>
+<h2 id="kode-eksempel">Kode eksempel</h2>
+<pre><code>BeskjedBuilder builder = getBuilderWithValues();
+Beskjed beskjed = builder.build(); // Alle felter valideres, for eventet eventuelt blir opprettet
+
+private BeskjedBuilder getBuilderWithValues() {
+    return new BeskjedBuilder()
+            .withFodselsnummer(fodselsnr)
+            .withGrupperingsId(grupperingsId)
+            .withSikkerhetsnivaa(sikkerhetsnivaa)
+            .withLink(link)
+            .withTekst(tekst)
+            .withTidspunkt(tidspunkt)
+            .withSynligFremTil(synligFremTil);
+}
+</code></pre>
+<p>Se <code>BeskjedBuilder()</code> <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/BeskjedBuilder.java#L9">her</a> og <code>build()</code> <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/BeskjedBuilder.java#L54">her</a>.</p>
                 
               
               
@@ -718,14 +806,28 @@ dette fram på forsiden av DittNAV.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
+          <a href="arkitektur.html" title="Arkitektur" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Forrige
+                </span>
+                Arkitektur
+              </div>
+            </div>
+          </a>
         
-          <a href="arkitektur.html" title="Arkitektur" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="eksempler.html" title="Eksempler" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Neste
                 </span>
-                Arkitektur
+                Eksempler
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
