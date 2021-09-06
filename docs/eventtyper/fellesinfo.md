@@ -1,3 +1,5 @@
+Se vår [guide](../guide_varslingstype.md) for valg av brukernotifikasjon.
+
 Alle brukernotifikasjoner består av en `key` og en `value` som legges på kafka-topicene. Alle eventtypene bruker [Nokkel]() som key, 
 mens hver eventtype har sin egen value. Se egene underkapitler for dette ([Beskjed](./beskjed/beskrivelse.md), [Oppgave](./oppgave/beskrivelse.md), [Done](./done/beskrivelse.md) og [Statusoppdatering](./statusoppdatering/beskrivelse.md)).
 
