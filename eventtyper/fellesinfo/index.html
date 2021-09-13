@@ -842,7 +842,8 @@ mens hver eventtype har sin egen value. Se egene underkapitler for dette (<a hre
 <h3 id="systembruker">systembruker</h3>
 <p>Navn på systembruker som har produsert eventet. Feltet har en begrensning på 100 tegn og kan ikke være null. </p>
 <h3 id="eventid">eventId</h3>
-<p>Den unike identifikatoren per event, og den må være unik for hver <code>systembruker</code> (produsent). Det er denne <code>eventID</code>-en som benyttes for å deaktivere eventer som er utført. Dette gjøres ved å sende et event av typen done, med referanse til det eventet som ikke skal vises på DittNAV lengre. Feltet har en begrensning på 50 tegn og kan ikke være null. </p>
+<p>Den unike identifikatoren per event, og den må være unik for hver <code>systembruker</code> (produsent). Det er denne <code>eventID</code>-en som benyttes for å deaktivere eventer som er utført. Dette gjøres ved å sende et event av typen done, med referanse til det eventet som ikke skal vises på DittNAV lengre. Feltet har en begrensning på 50 tegn og kan ikke være null.
+Vi anbefaler at dere bruker <code>UUID</code> eller <code>ULID</code> i dette feltet.  </p>
 <h4 id="schemas">Schemas</h4>
 <p>Du finner <code>Nokkel-schemas</code> <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/nokkel.avsc">her</a>.</p>
                 
