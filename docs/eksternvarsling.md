@@ -18,5 +18,6 @@ Generell informasjon:
     - Det er 7 dager mellom notifikasjon og re-notifikasjonen blir sendt.
     - Re-notifikasjon avbestilles hvis vi mottar Done-event for oppgaven.
 * Beskjed-event støtter ikke re-notifikasjon.
+* Når varselbestillingen oversendes Team Dokumentløsninger opprettes en bestillingsID. Denne ID-en har følgende format: `<eventtype>-<systembruker>-<eventID>`. `<eventtype>` er enten B for Beskjed eller O for Oppgave. BestillingsID-en vil bl.a. finnes igjen i eventene som skrives til status-topic-en nevnt tidligere.
 
 ![Images](https://github.com/navikt/brukernotifikasjon-docs/blob/master/docs/assets/Eksternvarsling.png?raw=true)
