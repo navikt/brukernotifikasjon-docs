@@ -26,6 +26,9 @@ Dette er lenken som blir aktivert i det en bruker trykker på selve eventet. En 
 Angir sikkerhetsnivået for informasjonen som eventet innholder.
 DittNAV søtter at en bruker er innlogget på nivå 3, hvis denne brukeren har eventer med nivå 4 så vil disse eventene bli "grået ut". Brukeren ser bare hvilken type event dette er, men ikke noe av innholdet. For å se innholdet må brukeren steppe opp til et høyere innloggingsnivå.
 
+### synligFremTil
+Et tidspunkt på når eventet ikke skal være synlig mer, f.eks oppgaven skal kun være synlig 7 dager. Bruk UTC som tidssone.
+
 ### eksternVarsling 
 Default-verdien til dette feltet er `false`, men hvis det blir satt til `true` vil oppgave-eventet bli varslet på SMS eller e-post. Les mer om eksternvarsling [her](../../eksternvarsling.md).
 
