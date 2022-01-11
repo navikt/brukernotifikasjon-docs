@@ -37,5 +37,11 @@ Default-verdien til dette feltet er `false`, men hvis det blir satt til `true` v
 Angir ønskede varslingskanaler for ekstern varsling. Gyldige verdier finnes [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/domain/PreferertKanal.java). Feltet kan inneholde flere prefererte kanaler, men er valgfritt.
 Dersom det ikke settes velges EPOST som default preferert kanal. Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
 
+### smsVarslingstekst
+Tekst som skal overstyre SMS [standard tekst](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/sms_beskjed.txt) for ekstern varsling. Teksten kan ikke være lengre enn 160 tegn. Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
+
+### epostVarslingstekst
+Tekst som skal overstyre epost [standard tekst](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_beskjed.txt) for ekstern varsling. Kun innhold av `<body>` skal overstyres. Tekst kan innholde HTML tagger som er gyldig i `<body>` tag og den kan ikke være lengre enn 10,000 tegn. Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
+
 ## Schemas
 Du finner `Beskjed-schemas` [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/beskjed.avsc).
