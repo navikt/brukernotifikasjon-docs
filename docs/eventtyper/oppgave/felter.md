@@ -40,7 +40,10 @@ Dersom det ikke settes velges EPOST som default preferert kanal. Det er ikke til
 Tekst som skal overstyre SMS [standard tekst](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/sms_oppgave.txt) for ekstern varsling. Teksten kan ikke være lengre enn 160 tegn. Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
 
 ### epostVarslingstekst
-Tekst som skal overstyre epost [standard tekst](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_oppgave.txt) for ekstern varsling. Kun innhold av `<body>` skal overstyres. Tekst kan innholde HTML tagger som er gyldig i `<body>` tag og den kan ikke være lengre enn 10,000 tegn. Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
+Tekst som skal overstyre epost [standard tekst](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_oppgave.txt) for ekstern varsling. Kun innhold av `<body>`([e-post mal](https://github.com/navikt/dittnav-varselbestiller/blob/6d4790261c4dd8bcde293da3b87b30a2d605f3c5/src/main/resources/texts/epost_mal.txt)) skal overstyres. Tekst kan innholde HTML tagger som er gyldig i `<body>` tag og den kan ikke være lengre enn 10,000 tegn. Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
+
+### epostVarslingsttittel
+Tekst som skal overstyre epost standard tittel ("Du har fått en oppgave fra NAV") for ekstern varsling. Tekst kan ikke være lengre enn 200 tegn. Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
 
 ## Schemas
 Du finner `Oppgave-schemas` [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/oppgave.avsc).
