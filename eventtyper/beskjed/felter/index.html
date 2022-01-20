@@ -494,6 +494,27 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#smsvarslingstekst" class="md-nav__link">
+    smsVarslingstekst
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epostvarslingstekst" class="md-nav__link">
+    epostVarslingstekst
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epostvarslingsttittel" class="md-nav__link">
+    epostVarslingsttittel
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -896,6 +917,27 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#smsvarslingstekst" class="md-nav__link">
+    smsVarslingstekst
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epostvarslingstekst" class="md-nav__link">
+    epostVarslingstekst
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epostvarslingsttittel" class="md-nav__link">
+    epostVarslingsttittel
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -950,6 +992,12 @@ DittNAV støtter at en bruker er innlogget på nivå 3, hvis denne brukeren har 
 <h3 id="preferertekanaler">prefererteKanaler</h3>
 <p>Angir ønskede varslingskanaler for ekstern varsling. Gyldige verdier finnes <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/domain/PreferertKanal.java">her</a>. Feltet kan inneholde flere prefererte kanaler, men er valgfritt.
 Dersom det ikke settes velges EPOST som default preferert kanal. Det er ikke tillatt å sette feltet dersom <code>eksternVarsling</code> er <code>false</code>.</p>
+<h3 id="smsvarslingstekst">smsVarslingstekst</h3>
+<p>Tekst som skal overstyre SMS <a href="https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/sms_beskjed.txt">standard tekst</a> for ekstern varsling. Teksten kan ikke være lengre enn 160 tegn. Det er ikke tillatt å sette feltet dersom <code>eksternVarsling</code> er <code>false</code>.</p>
+<h3 id="epostvarslingstekst">epostVarslingstekst</h3>
+<p>Tekst som skal overstyre epost <a href="https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_beskjed.txt">standard tekst</a> for ekstern varsling. Kun innhold av <code>&lt;body&gt;</code>(<a href="https://github.com/navikt/dittnav-varselbestiller/blob/6d4790261c4dd8bcde293da3b87b30a2d605f3c5/src/main/resources/texts/epost_mal.txt">e-post mal</a>) skal overstyres. Tekst kan innholde HTML tagger som er gyldig i <code>&lt;body&gt;</code> tag og den kan ikke være lengre enn 10,000 tegn. Det er ikke tillatt å sette feltet dersom <code>eksternVarsling</code> er <code>false</code>.</p>
+<h3 id="epostvarslingsttittel">epostVarslingsttittel</h3>
+<p>Tekst som skal overstyre epost standard tittel ("Beskjed fra NAV") for ekstern varsling. Tekst kan ikke være lengre enn 200 tegn. Det er ikke tillatt å sette feltet dersom <code>eksternVarsling</code> er <code>false</code>.</p>
 <h2 id="schemas">Schemas</h2>
 <p>Du finner <code>Beskjed-schemas</code> <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/beskjed.avsc">her</a>.</p>
                 
