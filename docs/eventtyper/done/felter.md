@@ -17,4 +17,4 @@ Fødselsnummeret til brukeren som eventet tilhører. Feltet har en begrensning p
 Dette feltet er med for eventtypen `done` for å sikre at man får med alle eventer knyttet til en `grupperingsId`, og settet av eventer blir ikke komplett uten å ha med `done`-eventene. Dette er bla viktig for å kunne generere tidslinjer ut i fra eventer. Feltet har en begrensning på 100 tegn og kan ikke være null.
 
 ## Schemas
-Du finner `Done-schemas` [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/done.avsc).
+[Done-schemas](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/legacy/doneLegacy.avsc) på Github.

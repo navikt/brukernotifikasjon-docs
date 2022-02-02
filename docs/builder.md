@@ -11,13 +11,13 @@ til `*.build()`. Denne exception-en vil gi informasjon om om hvilket felt som fe
 Se valideringsregler [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/util/ValidationUtil.java)
 
 ### Validering
-* [Nokkel](https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/NokkelBuilder.java#L16)
-* [Beskjed](https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/BeskjedBuilder.java#L54)
-* [Oppgave](https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/OppgaveBuilder.java#L48)
-* [Done](https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/DoneBuilder.java#L29)
-* [Statusoppdatering](https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/StatusoppdateringBuilder.java#L61)
+* [Nokkel](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/legacy/NokkelBuilder.java#L21)
+* [Beskjed](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/legacy/BeskjedBuilder.java#L91)
+* [Oppgave](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/legacy/OppgaveBuilder.java#L91)
+* [Done](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/legacy/DoneBuilder.java#L30)
+* [Statusoppdatering](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/legacy/StatusoppdateringBuilder.java#L63)
 
-## Kode eksempel 
+## Kodeeksempel 
 ```
 BeskjedBuilder builder = getBuilderWithValues();
 Beskjed beskjed = builder.build(); // Alle felter valideres, for eventet eventuelt blir opprettet
@@ -34,4 +34,4 @@ private BeskjedBuilder getBuilderWithValues() {
 }
 ```
 
-Se `BeskjedBuilder()` [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/BeskjedBuilder.java#L9) og `build()` [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/BeskjedBuilder.java#L54).
+Se `BeskjedBuilder()` [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/legacy/BeskjedBuilder.java) og `build()` [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/legacy/BeskjedBuilder.java#L90).

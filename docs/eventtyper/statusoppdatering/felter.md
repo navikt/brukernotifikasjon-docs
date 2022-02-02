@@ -33,4 +33,4 @@ StatusIntern kan være mer detaljert, f.eks Venter på dokumentasjon. Produsente
 Dette er sakstema til søknaden/saken. For eksempel fra kodeverket. Feltet har en begrensning på 50 tegn og kan ikke være null. Validering skjer [her](https://github.com/navikt/dittnav-event-aggregator/blob/ee610abdf1040199ba65ede76eda1c33b42acffa/src/main/kotlin/no/nav/personbruker/dittnav/eventaggregator/statusoppdatering/Statusoppdatering.kt#L57).
 
 ## Schemas
-Du finner `Statusoppdatering-schemas` [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/statusoppdatering.avsc).
+[Statusoppdatering-schemas](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/legacy/statusoppdateringLegacy.avsc) på Github.
