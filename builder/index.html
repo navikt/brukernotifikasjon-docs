@@ -226,8 +226,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kode-eksempel" class="md-nav__link">
-    Kode eksempel
+  <a href="#kodeeksempel" class="md-nav__link">
+    Kodeeksempel
   </a>
   
 </li>
@@ -746,8 +746,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kode-eksempel" class="md-nav__link">
-    Kode eksempel
+  <a href="#kodeeksempel" class="md-nav__link">
+    Kodeeksempel
   </a>
   
 </li>
@@ -778,13 +778,13 @@ til <code>*.build()</code>. Denne exception-en vil gi informasjon om om hvilket 
 <p>Se valideringsregler <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/util/ValidationUtil.java">her</a></p>
 <h3 id="validering">Validering</h3>
 <ul>
-<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/NokkelBuilder.java#L16">Nokkel</a></li>
-<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/BeskjedBuilder.java#L54">Beskjed</a></li>
-<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/OppgaveBuilder.java#L48">Oppgave</a></li>
-<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/DoneBuilder.java#L29">Done</a></li>
-<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/StatusoppdateringBuilder.java#L61">Statusoppdatering</a></li>
+<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/legacy/NokkelBuilder.java#L21">Nokkel</a></li>
+<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/legacy/BeskjedBuilder.java#L91">Beskjed</a></li>
+<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/legacy/OppgaveBuilder.java#L91">Oppgave</a></li>
+<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/legacy/DoneBuilder.java#L30">Done</a></li>
+<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/legacy/StatusoppdateringBuilder.java#L63">Statusoppdatering</a></li>
 </ul>
-<h2 id="kode-eksempel">Kode eksempel</h2>
+<h2 id="kodeeksempel">Kodeeksempel</h2>
 <pre><code>BeskjedBuilder builder = getBuilderWithValues();
 Beskjed beskjed = builder.build(); // Alle felter valideres, for eventet eventuelt blir opprettet
 
@@ -799,7 +799,7 @@ private BeskjedBuilder getBuilderWithValues() {
             .withSynligFremTil(synligFremTil);
 }
 </code></pre>
-<p>Se <code>BeskjedBuilder()</code> <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/BeskjedBuilder.java#L9">her</a> og <code>build()</code> <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/cc113a4258430b8f9f13b8f92b05e47abce40048/src/main/java/no/nav/brukernotifikasjon/schemas/builders/BeskjedBuilder.java#L54">her</a>.</p>
+<p>Se <code>BeskjedBuilder()</code> <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/legacy/BeskjedBuilder.java">her</a> og <code>build()</code> <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/legacy/BeskjedBuilder.java#L90">her</a>.</p>
                 
               
               
