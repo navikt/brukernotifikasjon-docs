@@ -19,4 +19,4 @@ Den unike identifikatoren per event, og den må være unik for hver `systembruke
 Vi anbefaler at dere bruker `UUID` eller `ULID` i dette feltet.  
 
 #### Schemas
-Du finner `Nokkel-schemas` [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/nokkel.avsc).
+[Nokkel-schemas](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/legacy/nokkelLegacy.avsc) på Github.

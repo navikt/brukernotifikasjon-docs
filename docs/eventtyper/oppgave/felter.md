@@ -46,4 +46,4 @@ Tekst som skal overstyre epost [standard tekst](https://github.com/navikt/dittna
 Tekst som skal overstyre epost standard tittel ("Du har fått en oppgave fra NAV") for ekstern varsling. Tekst kan ikke være lengre enn 200 tegn. Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
 
 ## Schemas
-Du finner `Oppgave-schemas` [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/oppgave.avsc).
+[Oppgave-schemas](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/legacy/oppgaveLegacy.avsc) på Github.
