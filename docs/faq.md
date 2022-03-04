@@ -10,7 +10,6 @@ Send et done-event for eventer man vil deaktivere. Send deretter en ny brukernot
 ## Hva er `grupperingsid`?
 Feltet brukes til å vise at eventer naturlig hører sammen, for eksempel at de tilhører samme sak, søknad, etc. Hvis flere eventer fra 
 samme produsent, tilhørende samme bruker, har samme grupperingsid vil de kunne grupperes sammen.
-Dette kan for eksempel visualiseres ved hjelp av en [tidslinje](./tidslinjer.md). 
 
 ## Kan vi sende et nytt event for å kvittere ut det opprinnelige eventet?
 Nei. Dersom oppgaven eller beskjeden i et event skal markeres som utført, lest,
@@ -22,11 +21,12 @@ Eventet vil være synlig på historikksiden så det kan være lurt å skrive for
 
 ## Hvis vi sender to eventer med samme nøkkel, vil nyeste event overskrive det opprinnelige?
 Nei, siden vi allerede har et event med samme nøkkel vil det siste eventet ikke bli skrevet til vår event-cache, og dermed heller ikke vist på Ditt NAV.
-Noe av grunnen til det er at vi ønsker å kunne bygge opp tidslinjer basert på alt som har skjedd innenfor den samme grupperingsId-en. 
 
+<!---
 ## Hvordan kan vi se om eventene vi produserer blir mottatt?
 Man kan se antall prosesserte eventer pr. produsent i et [Grafana-board](https://grafana.adeo.no/d/jXntDVWGk/brukernotifikasjoner-per-produsent?var-env=prod&var-cluster=prod-sbs&var-cluster_fss=prod-fss&var-namespace=default).
 Se ellers flere detaljer under ["Metrics"](./metrics.md)
+--->
 
 ## Må eventid-en være unik?
 Ja. Event-id-en som settes må være unik pr. systembruker og eventtype. Se flere detaljer under [Eventtyper](./eventtyper/fellesinfo.md)
@@ -43,7 +43,7 @@ For å få skrivetilgang må man som produsent bekrefte at man har forstått hva
 Nei, vi støtter kun fødselsnummer som identifikator for en bruker.
 
 ## Hva er retention-tiden på brukernotfikasjon-topicene?
-Alle brukernotifikasjons-topic-ene har uendelig retention.
+Topicene produsentene skriver til har én uke retention, men vi har et eget sett med intern-topics med uendelig retention.
 
 ## Kan det sendes varsel på SMS og/eller e-post til bruker samtidig som det opprettes Brukernotifikasjon på Ditt NAV?
 Ja. Se mer informasjon om dette under [Ekstern varsling](./eksternvarsling.md)
