@@ -523,18 +523,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../kodeeksempel/" title="Kodeeksempel" class="md-nav__link">
-      Kodeeksempel
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../topic/" title="Kafka topics" class="md-nav__link">
       Kafka topics
     </a>
@@ -662,7 +650,7 @@
                 
                 <h1 id="beskrivelse">Beskrivelse</h1>
 <p>Oppgave brukes når du vil ha utført en konkret oppgave. For eksempel, «vi mangler et vedlegg. Send inn her &lt;...&gt;.»</p>
-<p>Brukeren kan ikke selv klikke bort et <code>oppgave-event</code>. Så her må du som produsent sende et <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/done.avsc">done-event</a> på en egen <a href="https://github.com/navikt/brukernotifikasjon-topic-iac/blob/master/dev/aapen-brukernotifikasjon-done-v1.json">done-topic</a>, og dette done-eventet må ha samme Nokkel som oppgaven den skal markere som done. Altså <code>done-eventet</code> må ha samme <code>event-id</code> og <code>systembruker</code> som <code>oppgave-eventet</code> sitt <code>event-id</code> og <code>systembruker</code>. <code>Done-eventet</code> må også ha samme <code>fødselsnummer</code> som <code>oppgave-eventet</code>. Vi ser for oss at <code>event-id</code> kan være en random UUID som unikt kobler beskjed/oppgaven til done-eventet.</p>
+<p>Brukeren kan ikke selv klikke bort et <code>oppgave-event</code>, så her må du som produsent sende et <a href="../../done/beskrivelse/">Done-event</a></p>
 <p><img alt="Images" src="https://github.com/navikt/brukernotifikasjon-docs/blob/master/docs/assets/Oppgave.png?raw=true" /></p>
                 
               
