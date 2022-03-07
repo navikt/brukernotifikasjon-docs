@@ -471,37 +471,23 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#nokkel-kafka-key" class="md-nav__link">
-    Nokkel (Kafka key)
+  <a href="#nokkelinput-kafka-key" class="md-nav__link">
+    NokkelInput (Kafka key)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#done-kafka-value" class="md-nav__link">
-    Done (Kafka value)
+  <a href="#doneinput-kafka-value" class="md-nav__link">
+    DoneInput (Kafka value)
   </a>
   
-    <nav class="md-nav" aria-label="Done (Kafka value)">
+    <nav class="md-nav" aria-label="DoneInput (Kafka value)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#tidspunkt" class="md-nav__link">
     tidspunkt
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fodselsnummer" class="md-nav__link">
-    fodselsnummer
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grupperingsid" class="md-nav__link">
-    grupperingsId
   </a>
   
 </li>
@@ -522,18 +508,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../kodeeksempel/" title="Kodeeksempel" class="md-nav__link">
-      Kodeeksempel
-    </a>
   </li>
 
         
@@ -741,37 +715,23 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#nokkel-kafka-key" class="md-nav__link">
-    Nokkel (Kafka key)
+  <a href="#nokkelinput-kafka-key" class="md-nav__link">
+    NokkelInput (Kafka key)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#done-kafka-value" class="md-nav__link">
-    Done (Kafka value)
+  <a href="#doneinput-kafka-value" class="md-nav__link">
+    DoneInput (Kafka value)
   </a>
   
-    <nav class="md-nav" aria-label="Done (Kafka value)">
+    <nav class="md-nav" aria-label="DoneInput (Kafka value)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#tidspunkt" class="md-nav__link">
     tidspunkt
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fodselsnummer" class="md-nav__link">
-    fodselsnummer
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grupperingsid" class="md-nav__link">
-    grupperingsId
   </a>
   
 </li>
@@ -805,19 +765,15 @@
                 
                 
                 <h1 id="feltbeskrivelser">Feltbeskrivelser</h1>
-<h2 id="nokkel-kafka-key">Nokkel (Kafka key)</h2>
-<p>Se <a href="../../fellesinfo/">Nokkel</a></p>
-<h2 id="done-kafka-value">Done (Kafka value)</h2>
+<h2 id="nokkelinput-kafka-key">NokkelInput (Kafka key)</h2>
+<p>Se <a href="../../fellesinfo/">NokkelInput</a></p>
+<h2 id="doneinput-kafka-value">DoneInput (Kafka value)</h2>
 <p>Beskrivelse av feltene til eventet <code>done</code>.
 Husk å validere alle eventene med <code>builderene</code> våre. Les mer om dette <a href="../../../builder/">her</a>.</p>
 <h3 id="tidspunkt">tidspunkt</h3>
 <p>Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig. Bruk UTC som tidssone.</p>
-<h3 id="fodselsnummer">fodselsnummer</h3>
-<p>Fødselsnummeret til brukeren som eventet tilhører. Feltet har en begrensning på 11 tegn og kan ikke være null. Validering skjer <a href="https://github.com/navikt/dittnav-event-aggregator/blob/ee610abdf1040199ba65ede76eda1c33b42acffa/src/main/kotlin/no/nav/personbruker/dittnav/eventaggregator/done/Done.kt#L18">her</a>.</p>
-<h3 id="grupperingsid">grupperingsId</h3>
-<p>Dette feltet er med for eventtypen <code>done</code> for å sikre at man får med alle eventer knyttet til en <code>grupperingsId</code>, og settet av eventer blir ikke komplett uten å ha med <code>done</code>-eventene. Dette er bla viktig for å kunne generere tidslinjer ut i fra eventer. Feltet har en begrensning på 100 tegn og kan ikke være null.</p>
 <h2 id="schemas">Schemas</h2>
-<p><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/legacy/doneLegacy.avsc">Done-schemas</a> på Github.</p>
+<p><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/doneInput.avsc">DoneInput-schemas</a> på Github.</p>
                 
               
               
@@ -851,13 +807,13 @@ Husk å validere alle eventene med <code>builderene</code> våre. Les mer om det
           </a>
         
         
-          <a href="../kodeeksempel/" title="Kodeeksempel" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../topic/" title="Kafka topics" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Neste
                 </span>
-                Kodeeksempel
+                Kafka topics
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
