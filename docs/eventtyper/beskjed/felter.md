@@ -28,12 +28,12 @@ For å se innholdet må brukeren steppe opp til et høyere innloggingsnivå.
 
 ### synligFremTil (valgfri)
 Et tidspunkt på når eventet ikke skal være synlig mer, f.eks beskjeden skal kun være synlig 7 dager.
-Når synligFramTil-tidspunktet har passert vil dittnav sende et Done-event, og deaktivere eventet.
+Når synligFramTil-tidspunktet har passert vil DittNAV sende et Done-event, og deaktivere eventet.
 synligFramTil = null -> synlig for alltid, med mindre brukeren selv arkiverer beskjeden på forsiden av DittNAV.
 Bruk UTC som tidssone.
 
 ### eksternVarsling (valgfri)
-Default-verdien til dette feltet er `false`, men hvis det blir satt til `true` vil beskjed-en bli varslet på SMS eller e-post. 
+Default-verdien til dette feltet er `false`, men hvis det blir satt til `true` vil beskjed-eventet bli varslet på SMS eller e-post. 
 Les mer om eksternvarsling [her](../../eksternvarsling.md).
 
 ### prefererteKanaler (valgfri)
@@ -43,17 +43,17 @@ Feltet kan inneholde flere prefererte kanaler, men er valgfritt. Dersom det ikke
 Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
 
 ### smsVarslingstekst (valgfri)
-Tekst som skal overstyre SMS [standard tekst](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/sms_beskjed.txt) for ekstern varsling.
+Tekst som skal overstyre SMS ([standard tekst](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/sms_beskjed.txt)) for ekstern varsling.
 Teksten kan ikke være lengre enn 160 tegn. Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
 
 ### epostVarslingstekst (valgfri)
-Tekst som skal overstyre epost [standard tekst](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_beskjed.txt) for ekstern varsling.
+Tekst som skal overstyre epost ([standard tekst](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_beskjed.txt)) for ekstern varsling.
 Kun innhold av `<body>`([e-post mal](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_mal.txt)) skal overstyres.
-Tekst kan innholde HTML tagger som er gyldig i `<body>` tag og den kan ikke være lengre enn 4,000 tegn.
+Teksten kan innholde HTML tagger som er gyldig i `<body>` tag og den kan ikke være lengre enn 4,000 tegn.
 Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
 
 ### epostVarslingsttittel (valgfri)
-Tekst som skal overstyre epost standard tittel ("Beskjed fra NAV") for ekstern varsling. Tekst kan ikke være lengre enn 40 tegn.
+Tekst som skal overstyre epostens standardtittel ("Beskjed fra NAV") for ekstern varsling. Teksten kan ikke være lengre enn 40 tegn.
 Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
 
 ## Schemas

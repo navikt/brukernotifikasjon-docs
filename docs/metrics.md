@@ -9,7 +9,7 @@ Viser info om den løpende prosesseringen av eventer:
 * Antall felende eventer.
 
 ## Topic vs cache
-**Obs: viser ikke data for aiven-topics enda enda** 
+**Obs: viser ikke data for aiven-topics enda** 
 
 Metrics som oppdateres hvert femte minutt for å verifisere at alt unikt innhold på topic-ene har havnet i DittNAVs-event-cache.
 
@@ -24,7 +24,7 @@ Alle eventer sett under ett:
 [Dashboardet finnes her.](https://grafana.nais.io/d/kl64ViOnk/dittnav-brukernotifikasjoner-gcp)
 
 ### Oversikt per team
-**Obs: viser ikke data for aiven-topics enda enda**
+**Obs: viser ikke data for aiven-topics enda**
 
 Alle eventer gruppert per systembruker/produsent:
 

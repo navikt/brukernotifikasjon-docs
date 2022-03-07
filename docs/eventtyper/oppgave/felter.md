@@ -20,7 +20,7 @@ Feltet har en begrensning på 200 tegn, og kan ikke være null eller inneholde e
 
 ### sikkerhetsnivaa (valgfri)
 Angir sikkerhetsnivået for informasjonen som eventet innholder. Kan inneholde verdien `3` eller `4`, default verdi er `4`.
-DittNAV søtter at en bruker er innlogget på nivå 3, hvis denne brukeren har eventer med nivå 4 så vil disse eventene bli "grået ut". 
+DittNAV støtter at en bruker er innlogget på nivå 3, hvis denne brukeren har eventer med nivå 4 så vil disse eventene bli "grået ut". 
 Brukeren ser bare hvilken type event dette er, men ikke noe av innholdet. 
 For å se innholdet må brukeren steppe opp til et høyere innloggingsnivå.
 
@@ -42,13 +42,13 @@ Tekst som skal overstyre SMS [standard tekst](https://github.com/navikt/dittnav-
 Teksten kan ikke være lengre enn 160 tegn. Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
 
 ### epostVarslingstekst (valgfri)
-Tekst som skal overstyre epost [standard tekst](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_oppgave.txt) for ekstern varsling. 
+Tekst som skal overstyre epost ([standard tekst](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_oppgave.txt)) for ekstern varsling. 
 Kun innhold av `<body>`([e-post mal](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_mal.txt)) skal overstyres. 
-Tekst kan innholde HTML tagger som er gyldig i `<body>` tag og den kan ikke være lengre enn 4,000 tegn. 
+Teksten kan innholde HTML tagger som er gyldig i `<body>` tag og den kan ikke være lengre enn 4,000 tegn. 
 Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
 
 ### epostVarslingsttittel (valgfri)
-Tekst som skal overstyre epost standard tittel ("Du har fått en oppgave fra NAV") for ekstern varsling. Tekst kan ikke være lengre enn 40 tegn. 
+Tekst som skal overstyre epostens standardtittel ("Du har fått en oppgave fra NAV") for ekstern varsling. Teksten kan ikke være lengre enn 40 tegn. 
 Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
 
 ## Schemas
