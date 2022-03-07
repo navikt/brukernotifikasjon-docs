@@ -637,10 +637,11 @@
                 
                 
                 <h1 id="beskrivelse">Beskrivelse</h1>
-<p><code>Done-event</code> sendes når brukernotifikasjonen skal fjernes, for eksempel når oppgaven er utført, eller beskjeden er lest.</p>
+<p><code>Done-event</code> sendes når brukernotifikasjonen skal fjernes fra brukernotifikasjonslisten på DittNAV,
+for eksempel når oppgaven er utført, eller beskjeden er lest.</p>
 <p><code>Done-event</code> må ha samme eventId og fødselsnummer som Oppgaven/Beskjeden den skal deaktivere. </p>
 <p>Hvis brukeren trykker på arkivér-knappen på en beskjed vil DittNAV selv sende et <code>done-event</code> for beskjeden.
-Hvis synligFremTil-tidspunktet har passert vil det også automatisk bli sendt et <code>done-event</code>.</p>
+Hvis synligFremTil-tidspunktet har passert vil det også automatisk sendes et <code>done-event</code>.</p>
 <p>Deaktiverte eventer vil fortsatt være tilgjengelig fra historikk-visningen på DittNAV.</p>
 <p><img alt="Images" src="https://github.com/navikt/brukernotifikasjon-docs/blob/master/docs/assets/Historikk_dittnav.png?raw=true" /></p>
                 

@@ -882,7 +882,7 @@ Feltet har en begrensning på 500 tegn og kan ikke være null.</p>
 Feltet har en begrensning på 200 tegn, og kan ikke være null eller inneholde en tom streng. </p>
 <h3 id="sikkerhetsnivaa-valgfri">sikkerhetsnivaa (valgfri)</h3>
 <p>Angir sikkerhetsnivået for informasjonen som eventet innholder. Kan inneholde verdien <code>3</code> eller <code>4</code>, default verdi er <code>4</code>.
-DittNAV søtter at en bruker er innlogget på nivå 3, hvis denne brukeren har eventer med nivå 4 så vil disse eventene bli "grået ut". 
+DittNAV støtter at en bruker er innlogget på nivå 3, hvis denne brukeren har eventer med nivå 4 så vil disse eventene bli "grået ut". 
 Brukeren ser bare hvilken type event dette er, men ikke noe av innholdet. 
 For å se innholdet må brukeren steppe opp til et høyere innloggingsnivå.</p>
 <h3 id="synligfremtil-valgfri">synligFremTil (valgfri)</h3>
@@ -899,12 +899,12 @@ Det er ikke tillatt å sette feltet dersom <code>eksternVarsling</code> er <code
 <p>Tekst som skal overstyre SMS <a href="https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/sms_oppgave.txt">standard tekst</a> for ekstern varsling.
 Teksten kan ikke være lengre enn 160 tegn. Det er ikke tillatt å sette feltet dersom <code>eksternVarsling</code> er <code>false</code>.</p>
 <h3 id="epostvarslingstekst-valgfri">epostVarslingstekst (valgfri)</h3>
-<p>Tekst som skal overstyre epost <a href="https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_oppgave.txt">standard tekst</a> for ekstern varsling. 
+<p>Tekst som skal overstyre epost (<a href="https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_oppgave.txt">standard tekst</a>) for ekstern varsling. 
 Kun innhold av <code>&lt;body&gt;</code>(<a href="https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_mal.txt">e-post mal</a>) skal overstyres. 
-Tekst kan innholde HTML tagger som er gyldig i <code>&lt;body&gt;</code> tag og den kan ikke være lengre enn 4,000 tegn. 
+Teksten kan innholde HTML tagger som er gyldig i <code>&lt;body&gt;</code> tag og den kan ikke være lengre enn 4,000 tegn. 
 Det er ikke tillatt å sette feltet dersom <code>eksternVarsling</code> er <code>false</code>.</p>
 <h3 id="epostvarslingsttittel-valgfri">epostVarslingsttittel (valgfri)</h3>
-<p>Tekst som skal overstyre epost standard tittel ("Du har fått en oppgave fra NAV") for ekstern varsling. Tekst kan ikke være lengre enn 40 tegn. 
+<p>Tekst som skal overstyre epostens standardtittel ("Du har fått en oppgave fra NAV") for ekstern varsling. Teksten kan ikke være lengre enn 40 tegn. 
 Det er ikke tillatt å sette feltet dersom <code>eksternVarsling</code> er <code>false</code>.</p>
 <h2 id="schemas">Schemas</h2>
 <p><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/oppgaveInput.avsc">Oppgave-schemas</a> på Github.</p>
