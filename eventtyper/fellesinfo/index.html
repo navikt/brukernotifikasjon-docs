@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hva-gjr-et-event-unikt" class="md-skip">
+        <a href="#kafka-key-nokkelinput" class="md-skip">
           Gå til innhold
         </a>
       
@@ -338,33 +338,47 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#hva-gjr-et-event-unikt" class="md-nav__link">
-    Hva gjør et event unikt?
+  <a href="#kafka-key-nokkelinput" class="md-nav__link">
+    Kafka key (NokkelInput)
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kafka-key-nokkel" class="md-nav__link">
-    Kafka key (Nokkel)
-  </a>
-  
-    <nav class="md-nav" aria-label="Kafka key (Nokkel)">
+    <nav class="md-nav" aria-label="Kafka key (NokkelInput)">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#systembruker" class="md-nav__link">
-    systembruker
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#eventid" class="md-nav__link">
     eventId
   </a>
   
-    <nav class="md-nav" aria-label="eventId">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grupperidsid" class="md-nav__link">
+    grupperidsId
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fodselsnummer" class="md-nav__link">
+    fodselsnummer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#namespace" class="md-nav__link">
+    namespace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appnavn" class="md-nav__link">
+    appnavn
+  </a>
+  
+    <nav class="md-nav" aria-label="appnavn">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -744,33 +758,47 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#hva-gjr-et-event-unikt" class="md-nav__link">
-    Hva gjør et event unikt?
+  <a href="#kafka-key-nokkelinput" class="md-nav__link">
+    Kafka key (NokkelInput)
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kafka-key-nokkel" class="md-nav__link">
-    Kafka key (Nokkel)
-  </a>
-  
-    <nav class="md-nav" aria-label="Kafka key (Nokkel)">
+    <nav class="md-nav" aria-label="Kafka key (NokkelInput)">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#systembruker" class="md-nav__link">
-    systembruker
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#eventid" class="md-nav__link">
     eventId
   </a>
   
-    <nav class="md-nav" aria-label="eventId">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grupperidsid" class="md-nav__link">
+    grupperidsId
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fodselsnummer" class="md-nav__link">
+    fodselsnummer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#namespace" class="md-nav__link">
+    namespace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appnavn" class="md-nav__link">
+    appnavn
+  </a>
+  
+    <nav class="md-nav" aria-label="appnavn">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -809,19 +837,30 @@
                   <h1>Fellesinfo</h1>
                 
                 <p>Se vår <a href="../../guide_varslingstype/">guide</a> for valg av brukernotifikasjon.</p>
-<p>Alle brukernotifikasjoner består av en <code>key</code> og en <code>value</code> som legges på kafka-topicene. Alle eventtypene bruker <a href="">Nokkel</a> som key, 
+<p>Alle brukernotifikasjoner består av en <code>key</code> og en <code>value</code> som legges på kafka-topicene. Alle eventtypene bruker <a href="">NokkelInput</a> som key, 
 mens hver eventtype har sin egen value. Se egene underkapitler for dette (<a href="../beskjed/beskrivelse/">Beskjed</a>, <a href="../oppgave/beskrivelse/">Oppgave</a>, <a href="../done/beskrivelse/">Done</a> og <a href="../statusoppdatering/beskrivelse/">Statusoppdatering</a>).</p>
 <p>Husk å bruk <code>builderene</code> våre for å validere alle eventer. Les mer om dette <a href="../../builder/">her</a>.</p>
-<h2 id="hva-gjr-et-event-unikt">Hva gjør et event unikt?</h2>
-<h2 id="kafka-key-nokkel">Kafka key (Nokkel)</h2>
-<p>Feltene i Nokkel er som en kompositt-nøkkel for å unikt identifisere eventet.</p>
-<h3 id="systembruker">systembruker</h3>
-<p>Navn på systembruker som har produsert eventet. Feltet har en begrensning på 100 tegn og kan ikke være null. </p>
+<h2 id="kafka-key-nokkelinput">Kafka key (NokkelInput)</h2>
+<p>Feltene i NokkelInput er som en kompositt-nøkkel for å unikt identifisere eventet.
+Alle feltene nedenfor må være med for at eventet skal bli validert.</p>
 <h3 id="eventid">eventId</h3>
-<p>Den unike identifikatoren per event, og den må være unik for hver <code>systembruker</code> (produsent). Det er denne <code>eventID</code>-en som benyttes for å deaktivere eventer som er utført. Dette gjøres ved å sende et event av typen done, med referanse til det eventet som ikke skal vises på DittNAV lengre. Feltet har en begrensning på 50 tegn og kan ikke være null.
-Vi anbefaler at dere bruker <code>UUID</code> eller <code>ULID</code> i dette feltet.  </p>
+<p>Den unike identifikatoren per event, må enten være en UUID eller en ULID.
+Det er denne <code>eventID</code>-en som benyttes for å deaktivere eventer som er utført. 
+Dette gjøres ved å sende et event av typen done, med referanse til det eventet som ikke skal vises på DittNAV lengre.
+Feltet kan ikke være null.</p>
+<h3 id="grupperidsid">grupperidsId</h3>
+<p>Feltet grupperingsId brukes for å kunne samle alle eventer som hører til en sak, søknad eller et dokument.
+Dette er typisk en saksId, søknadsId eller dokumentId, men dere velger selv hvilken verdi dere putter der.
+Men det er viktig at det er samme verdi for alle eventer som skal grupperes sammen.
+Typisk bruk for dette feltet vil være oppbygging av tidslinjer. Feltet har en begrensning på 100 tegn og kan ikke være null.</p>
+<h3 id="fodselsnummer">fodselsnummer</h3>
+<p>Fødselsnummeret til brukeren som eventet tilhører. Feltet har en begrensning på 11 tegn og kan ikke være null.</p>
+<h3 id="namespace">namespace</h3>
+<p>Namespacet til appen som har produsert eventet. Feltet har en begrensning på 63 tegn og kan ikke være null.</p>
+<h3 id="appnavn">appnavn</h3>
+<p>Navnet på appen som har produsert eventet. Feltet har en begrensning på 100 tegn og kan ikke være null.</p>
 <h4 id="schemas">Schemas</h4>
-<p><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/legacy/nokkelLegacy.avsc">Nokkel-schemas</a> på Github.</p>
+<p><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/nokkelInput.avsc">Nokkel-schemas</a> på Github.</p>
                 
               
               
