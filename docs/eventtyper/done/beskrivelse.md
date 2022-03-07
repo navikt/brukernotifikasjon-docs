@@ -1,10 +1,11 @@
 # Beskrivelse
 
-`Done` sendes når oppgaven er utført. Hvis vi bruker samme eksempel som over ville du sendt et `done-event` når sluttbrukeren har lastet opp vedlegget.
+`Done-event` sendes når brukernotifikasjonen skal fjernes, for eksempel når oppgaven er utført, eller beskjeden er lest.
 
-`Done-event` må ha samme Nokkel, fødselsnummer og grupperingsid som Oppgaven/Beskjeden den skal deaktivere. 
+`Done-event` må ha samme eventId og fødselsnummer som Oppgaven/Beskjeden den skal deaktivere. 
 
-DittNAV sender `done-event` på `beskjed-event`, siden brukeren selv kan klikke bort disse eventene når beskjeden er mottatt.
+Hvis brukeren trykker på arkivér-knappen på en beskjed vil DittNAV selv sende et `done-event` for beskjeden.
+Hvis synligFremTil-tidspunktet har passert vil det også automatisk bli sendt et `done-event`.
 
 Deaktiverte eventer vil fortsatt være tilgjengelig fra historikk-visningen på DittNAV.
 
