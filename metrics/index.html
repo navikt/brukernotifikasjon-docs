@@ -303,36 +303,16 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prosessering" class="md-nav__link">
-    Prosessering
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#topic-vs-cache" class="md-nav__link">
-    Topic vs cache
-  </a>
-  
-    <nav class="md-nav" aria-label="Topic vs cache">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#totaloversikt" class="md-nav__link">
     Totaloversikt
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#oversikt-per-team" class="md-nav__link">
     Oversikt per team
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -687,36 +667,16 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prosessering" class="md-nav__link">
-    Prosessering
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#topic-vs-cache" class="md-nav__link">
-    Topic vs cache
-  </a>
-  
-    <nav class="md-nav" aria-label="Topic vs cache">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#totaloversikt" class="md-nav__link">
     Totaloversikt
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#oversikt-per-team" class="md-nav__link">
     Oversikt per team
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -738,32 +698,20 @@
                 
                 <h1 id="metrics">Metrics</h1>
 <p>DittNAV-teamet har laget et par granfa-dashbards som kan brukes for å verifisere at alt fungerer som det skal.</p>
-<h2 id="prosessering">Prosessering</h2>
-<p>Viser info om den løpende prosesseringen av eventer:</p>
-<ul>
-<li>Prosesseringstid</li>
-<li>Antall eventer motatt.</li>
-<li>Antall felende eventer.</li>
-</ul>
-<h2 id="topic-vs-cache">Topic vs cache</h2>
-<p><strong>Obs: viser ikke data for aiven-topics enda</strong> </p>
-<p>Metrics som oppdateres hvert femte minutt for å verifisere at alt unikt innhold på topic-ene har havnet i DittNAVs-event-cache.</p>
-<p><a href="https://grafana.adeo.no/d/6ore-PuZz/dittnav-kafka?orgId=1&amp;refresh=1m&amp;var-cluster=prod-sbs&amp;var-namespace=All&amp;var-event_type=All&amp;var-producer=All">Dashboardet finnes her.</a></p>
-<h3 id="totaloversikt">Totaloversikt</h3>
+<h2 id="totaloversikt">Totaloversikt</h2>
 <p>Alle eventer sett under ett:</p>
 <ul>
 <li>Info om eventuell diff, mellom hva som finnes av eventer på kafka-topic-ene og hva som finnes i cache-en. </li>
 <li>Visualisert per eventtype.</li>
 </ul>
 <p><a href="https://grafana.nais.io/d/kl64ViOnk/dittnav-brukernotifikasjoner-gcp">Dashboardet finnes her.</a></p>
-<h3 id="oversikt-per-team">Oversikt per team</h3>
-<p><strong>Obs: viser ikke data for aiven-topics enda</strong></p>
-<p>Alle eventer gruppert per systembruker/produsent:</p>
+<h2 id="oversikt-per-team">Oversikt per team</h2>
 <ul>
-<li>Info om eventuell diff, mellom hva som finnes av eventer på kafka-topic-ene og hva som finnes i cache-en. </li>
-<li>Visualisert per eventtype.</li>
+<li>Eventer gruppert per produsent og type.</li>
+<li>Duplikate og feilede eventer. </li>
+<li>Prosesseringstid</li>
 </ul>
-<p><a href="https://grafana.adeo.no/d/jXntDVWGk/brukernotifikasjoner-per-produsent?orgId=1&amp;refresh=5m&amp;var-env=prod&amp;var-cluster=prod-sbs&amp;var-cluster_fss=prod-fss&amp;var-namespace=default&amp;var-producer=syfo-sykmeldingsvarsel">Dashboardet finnes her.</a></p>
+<p><a href="https://grafana.nais.io/d/lh20Pgv7z/brukernotifikasjonbestiller-bnb">Dashboardet finnes her.</a></p>
                 
               
               

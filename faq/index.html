@@ -291,6 +291,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#hvordan-kan-vi-se-om-eventene-vi-produserer-blir-mottatt" class="md-nav__link">
+    Hvordan kan vi se om eventene vi produserer blir mottatt?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ma-eventid-en-vre-unik" class="md-nav__link">
     Må eventid-en være unik?
   </a>
@@ -805,6 +812,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#hvordan-kan-vi-se-om-eventene-vi-produserer-blir-mottatt" class="md-nav__link">
+    Hvordan kan vi se om eventene vi produserer blir mottatt?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ma-eventid-en-vre-unik" class="md-nav__link">
     Må eventid-en være unik?
   </a>
@@ -893,12 +907,9 @@ ikke lenger relevant o.l., skal det sendes et <a href="../eventtyper/done/beskri
 Eventet vil være synlig på historikksiden så det kan være lurt å skrive for eksempel "Beklager, det var feil lenke i den forrige beskjeden", så sluttbruker ikke blir forvirret med to like beskjeder/oppgaver på historikksiden.</p>
 <h2 id="hvis-vi-sender-to-eventer-med-samme-nkkel-vil-nyeste-event-overskrive-det-opprinnelige">Hvis vi sender to eventer med samme nøkkel, vil nyeste event overskrive det opprinnelige?</h2>
 <p>Nei, siden vi allerede har et event med samme nøkkel vil det siste eventet ikke bli skrevet til vår event-cache, og dermed heller ikke vist på Ditt NAV.</p>
-<!---
-## Hvordan kan vi se om eventene vi produserer blir mottatt?
-Man kan se antall prosesserte eventer pr. produsent i et [Grafana-board](https://grafana.adeo.no/d/jXntDVWGk/brukernotifikasjoner-per-produsent?var-env=prod&var-cluster=prod-sbs&var-cluster_fss=prod-fss&var-namespace=default).
-Se ellers flere detaljer under ["Metrics"](./metrics.md)
---->
-
+<h2 id="hvordan-kan-vi-se-om-eventene-vi-produserer-blir-mottatt">Hvordan kan vi se om eventene vi produserer blir mottatt?</h2>
+<p>Man kan se antall prosesserte eventer pr. produsent i et <a href="https://grafana.nais.io/d/lh20Pgv7z/brukernotifikasjonbestiller-bnb">Grafana-board</a>.
+Se ellers flere detaljer under <a href="../metrics/">"Metrics"</a></p>
 <h2 id="ma-eventid-en-vre-unik">Må eventid-en være unik?</h2>
 <p>Ja. Event-id-en som settes må være unik pr. systembruker og eventtype. Se flere detaljer under <a href="../eventtyper/fellesinfo/">Eventtyper</a></p>
 <h2 id="hvorfor-kan-vi-ikke-skrive-mer-tekst-i-eventene">Hvorfor kan vi ikke skrive mer tekst i eventene?</h2>
