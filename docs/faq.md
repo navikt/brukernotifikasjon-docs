@@ -22,11 +22,9 @@ Eventet vil være synlig på historikksiden så det kan være lurt å skrive for
 ## Hvis vi sender to eventer med samme nøkkel, vil nyeste event overskrive det opprinnelige?
 Nei, siden vi allerede har et event med samme nøkkel vil det siste eventet ikke bli skrevet til vår event-cache, og dermed heller ikke vist på Ditt NAV.
 
-<!---
 ## Hvordan kan vi se om eventene vi produserer blir mottatt?
-Man kan se antall prosesserte eventer pr. produsent i et [Grafana-board](https://grafana.adeo.no/d/jXntDVWGk/brukernotifikasjoner-per-produsent?var-env=prod&var-cluster=prod-sbs&var-cluster_fss=prod-fss&var-namespace=default).
+Man kan se antall prosesserte eventer pr. produsent i et [Grafana-board](https://grafana.nais.io/d/lh20Pgv7z/brukernotifikasjonbestiller-bnb).
 Se ellers flere detaljer under ["Metrics"](./metrics.md)
---->
 
 ## Må eventid-en være unik?
 Ja. Event-id-en som settes må være unik pr. systembruker og eventtype. Se flere detaljer under [Eventtyper](./eventtyper/fellesinfo.md)
