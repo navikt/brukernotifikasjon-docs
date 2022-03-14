@@ -8,7 +8,8 @@ Beskrivelse av feltene til eventet `Statusoppdatering`.
 Husk å validere alle eventene med `builderene` våre. Les mer om dette [her](../../builder.md).
 
 ### tidspunkt
-Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig. Bruk UTC som tidssone.
+Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig.
+Må være epoch milliseconds, og UTC som tidssone.
 
 ### link
 Dette er lenken som blir aktivert i det en bruker trykker på selve eventet. 
