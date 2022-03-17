@@ -28,11 +28,11 @@ Tilgang til topic kan fås ved å kontakte Team Dokumentløsninger på #team-dok
 
 * Det kan bestilles eksternt varsel på både SMS og epost. Team Dokumentløsninger henter kontaktinformasjonen til sluttbruker og det er dette som til slutt avgjør hvilken kanal det kan varsles i. 
 Les mer om dette [her](https://confluence.adeo.no/display/BOA/For+Konsumenter).
-* For oppgave-eventer sender Team Dokumentløsninger kun én re-notifikasjon på nytt (SMS/epost)
+* For oppgave-eventer sender Team Dokumentløsninger kun én re-notifikasjon (SMS/epost)
     - Det er 7 dager mellom notifikasjon og re-notifikasjonen blir sendt.
     - Re-notifikasjon avbestilles hvis vi mottar Done-event for oppgaven.
 * Beskjed-event støtter ikke re-notifikasjon.
-* Når varselbestillingen oversendes Team Dokumentløsninger opprettes en bestillingsID. Denne ID-en har følgende format: `<eventtype>-<systembruker>-<eventID>`. 
+* Når varselbestillingen oversendes Team Dokumentløsninger opprettes en bestillingsID. Denne ID-en har følgende format: `<eventtype>-<appnavn>-<eventID>`. 
 `<eventtype>` er enten B for Beskjed eller O for Oppgave. BestillingsID-en vil bl.a. finnes igjen i eventene som skrives til status-topic-en nevnt tidligere.
 
 ![Images](https://github.com/navikt/brukernotifikasjon-docs/blob/master/docs/assets/Eksternvarsling.png?raw=true)
