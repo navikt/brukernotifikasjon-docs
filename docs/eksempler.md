@@ -4,4 +4,4 @@
 
 
 I dev kan du for en innlogget bruker teste ut brukernotifikasjonene ved å bruke test-produceren via
-<https://person.dev.nav.no/person/dittnav/hendelser>
+<https://www.dev.nav.no/person/dittnav/hendelser>

@@ -12,4 +12,4 @@ Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdi
 Må være epoch milliseconds, og UTC som tidssone.
 
 ## Schemas
-[DoneInput-schemas](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/doneInput.avsc) på Github.
+[DoneInput-schemas](https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/avro/doneInput.avsc) på Github.

@@ -13,9 +13,9 @@ Feltet er ikke påkrevet. Hvis det ikke settes vil epost være preferert varslin
 All SMS og e-post får en standard tekst. Dette er mulig å overstyre for både SMS og e-post, dette gjøres gjennom disse to feltene, disse feltene er ikke påkrevet:
 
 * `smsVarslingstekst` skal overstyre SMS-teksten. Hvis dette feltet ikke er satt, skal bruker få en SMS med standard tekst:
-[beskjed](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/sms_beskjed.txt) /[oppgave](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/sms_oppgave.txt).
+[beskjed](https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/sms_beskjed.txt) /[oppgave](https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/sms_oppgave.txt).
 * `epostVarslingstekst` skal overstyre epost-teksten. Hvis dette feltet ikke er satt, skal bruker få en epost med standard tekst:
-[beskjed](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_beskjed.txt) /[oppgave](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_oppgave.txt). 
+[beskjed](https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/epost_beskjed.txt) /[oppgave](https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/epost_oppgave.txt). 
 Kun innhold av `<body>`([e-post mal](https://github.com/navikt/dittnav-varselbestiller/blob/6d4790261c4dd8bcde293da3b87b30a2d605f3c5/src/main/resources/texts/epost_mal.txt)) skal overstyres.
 * `epostVarslingstittel` skal overstyre epost-tittel. Hvis dette feltet ikke er satt, skal bruker få en epost med standard tittel, "Beskjed fra NAV" for `beskjed` og "Du har fått en oppgave fra NAV" for `oppgave`.
 
@@ -35,4 +35,4 @@ Les mer om dette [her](https://confluence.adeo.no/display/BOA/For+Konsumenter).
 * Når varselbestillingen oversendes Team Dokumentløsninger opprettes en bestillingsID. Denne ID-en har følgende format: `<eventtype>-<appnavn>-<eventID>`. 
 `<eventtype>` er enten B for Beskjed eller O for Oppgave. BestillingsID-en vil bl.a. finnes igjen i eventene som skrives til status-topic-en nevnt tidligere.
 
-![Images](https://github.com/navikt/brukernotifikasjon-docs/blob/master/docs/assets/Eksternvarsling.png?raw=true)
+![Images](https://github.com/navikt/brukernotifikasjon-docs/blob/main/docs/assets/Eksternvarsling.png?raw=true)

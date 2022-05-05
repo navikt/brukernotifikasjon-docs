@@ -39,17 +39,17 @@ Les mer om eksternvarsling [her](../../eksternvarsling.md).
 
 ### prefererteKanaler (valgfri)
 Angir ønskede varslingskanaler for ekstern varsling. 
-Gyldige verdier finnes [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/domain/PreferertKanal.java).
+Gyldige verdier finnes [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/domain/PreferertKanal.java).
 Feltet kan inneholde flere prefererte kanaler, men er valgfritt. Dersom det ikke settes velges EPOST som default preferert kanal.
 Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
 
 ### smsVarslingstekst (valgfri)
-Tekst som skal overstyre SMS ([standard tekst](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/sms_beskjed.txt)) for ekstern varsling.
+Tekst som skal overstyre SMS ([standard tekst](https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/sms_beskjed.txt)) for ekstern varsling.
 Teksten kan ikke være lengre enn 160 tegn. Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
 
 ### epostVarslingstekst (valgfri)
-Tekst som skal overstyre epost ([standard tekst](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_beskjed.txt)) for ekstern varsling.
-Kun innhold av `<body>`([e-post mal](https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_mal.txt)) skal overstyres.
+Tekst som skal overstyre epost ([standard tekst](https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/epost_beskjed.txt)) for ekstern varsling.
+Kun innhold av `<body>`([e-post mal](https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/epost_mal.txt)) skal overstyres.
 Teksten kan innholde HTML tagger som er gyldig i `<body>` tag og den kan ikke være lengre enn 4,000 tegn.
 Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
 
@@ -58,4 +58,4 @@ Tekst som skal overstyre epostens standardtittel ("Beskjed fra NAV") for ekstern
 Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
 
 ## Schemas
-[BeskjedInput-schemas](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/beskjedInput.avsc) på Github.
+[BeskjedInput-schemas](https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/avro/beskjedInput.avsc) på Github.

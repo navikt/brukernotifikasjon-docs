@@ -4,5 +4,5 @@ DittNAV sender `done-event` på `beskjed-event`, siden brukeren selv kan klikke 
 
 Deaktiverte eventer vil fortsatt være tilgjengelig fra historikk-visningen på DittNAV.
 
-![Images](https://github.com/navikt/brukernotifikasjon-docs/blob/master/docs/assets/Historikk_dittnav.png?raw=true)
+![Images](https://github.com/navikt/brukernotifikasjon-docs/blob/main/docs/assets/Historikk_dittnav.png?raw=true)
 

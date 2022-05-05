@@ -34,4 +34,4 @@ StatusIntern kan være mer detaljert, f.eks Venter på dokumentasjon. Produsente
 Feltet har en begrensning på 100 tegn.
 
 ## Schemas
-[Statusoppdatering-schemas](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/statusoppdateringInput.avsc) på Github.
+[Statusoppdatering-schemas](https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/avro/statusoppdateringInput.avsc) på Github.

@@ -8,14 +8,14 @@ eventene blir avvist av DittNAV pga valideringsfeil.
 Hvis det forsøkes å bygge et event med ugyldige feltverdier, så vil builderen kaste en `FieldValidationException` ved kallet 
 til `*.build()`. Denne exception-en vil gi informasjon om om hvilket felt som feilet og hva som skjedde.
 
-Se valideringsregler [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/util/ValidationUtil.java)
+Se valideringsregler [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/util/ValidationUtil.java)
 
 ### Buildere
-* [Nokkel](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/NokkelInputBuilder.java)
-* [Beskjed](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/BeskjedInputBuilder.java)
-* [Oppgave](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/OppgaveInputBuilder.java)
-* [Done](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/DoneInputBuilder.java)
-* [Statusoppdatering](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/StatusoppdateringInputBuilder.java)
+* [Nokkel](https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/NokkelInputBuilder.java)
+* [Beskjed](https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/BeskjedInputBuilder.java)
+* [Oppgave](https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/OppgaveInputBuilder.java)
+* [Done](https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/DoneInputBuilder.java)
+* [Statusoppdatering](https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/StatusoppdateringInputBuilder.java)
 
 ## Kodeeksempel 
 ```

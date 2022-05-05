@@ -10,4 +10,4 @@ Hvis synligFremTil-tidspunktet har passert vil det også automatisk sendes et `d
 
 Deaktiverte eventer vil fortsatt være tilgjengelig fra historikk-visningen på DittNAV.
 
-![Images](https://github.com/navikt/brukernotifikasjon-docs/blob/master/docs/assets/Historikk_dittnav.png?raw=true)
+![Images](https://github.com/navikt/brukernotifikasjon-docs/blob/main/docs/assets/Historikk_dittnav.png?raw=true)

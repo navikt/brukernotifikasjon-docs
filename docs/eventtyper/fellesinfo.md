@@ -31,4 +31,4 @@ Namespacet til appen som har produsert eventet. Feltet har en begrensning på 63
 Navnet på appen som har produsert eventet. Feltet har en begrensning på 100 tegn og kan ikke være null.
 
 #### Schemas
-[Nokkel-schemas](https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/nokkelInput.avsc) på Github.
+[Nokkel-schemas](https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/avro/nokkelInput.avsc) på Github.
