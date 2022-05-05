@@ -893,22 +893,22 @@ For å se innholdet må brukeren steppe opp til et høyere innloggingsnivå.</p>
 Les mer om eksternvarsling <a href="../../../eksternvarsling/">her</a>.</p>
 <h3 id="preferertekanaler-valgfri">prefererteKanaler (valgfri)</h3>
 <p>Angir ønskede varslingskanaler for ekstern varsling. 
-Gyldige verdier finnes <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/domain/PreferertKanal.java">her</a>. 
+Gyldige verdier finnes <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/domain/PreferertKanal.java">her</a>. 
 Feltet kan inneholde flere prefererte kanaler, men er valgfritt. Dersom det ikke settes velges EPOST som default preferert kanal. 
 Det er ikke tillatt å sette feltet dersom <code>eksternVarsling</code> er <code>false</code>.</p>
 <h3 id="smsvarslingstekst-valgfri">smsVarslingstekst (valgfri)</h3>
-<p>Tekst som skal overstyre SMS <a href="https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/sms_oppgave.txt">standard tekst</a> for ekstern varsling.
+<p>Tekst som skal overstyre SMS <a href="https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/sms_oppgave.txt">standard tekst</a> for ekstern varsling.
 Teksten kan ikke være lengre enn 160 tegn. Det er ikke tillatt å sette feltet dersom <code>eksternVarsling</code> er <code>false</code>.</p>
 <h3 id="epostvarslingstekst-valgfri">epostVarslingstekst (valgfri)</h3>
-<p>Tekst som skal overstyre epost (<a href="https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_oppgave.txt">standard tekst</a>) for ekstern varsling. 
-Kun innhold av <code>&lt;body&gt;</code>(<a href="https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_mal.txt">e-post mal</a>) skal overstyres. 
+<p>Tekst som skal overstyre epost (<a href="https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/epost_oppgave.txt">standard tekst</a>) for ekstern varsling. 
+Kun innhold av <code>&lt;body&gt;</code>(<a href="https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/epost_mal.txt">e-post mal</a>) skal overstyres. 
 Teksten kan innholde HTML tagger som er gyldig i <code>&lt;body&gt;</code> tag og den kan ikke være lengre enn 4,000 tegn. 
 Det er ikke tillatt å sette feltet dersom <code>eksternVarsling</code> er <code>false</code>.</p>
 <h3 id="epostvarslingsttittel-valgfri">epostVarslingsttittel (valgfri)</h3>
 <p>Tekst som skal overstyre epostens standardtittel ("Du har fått en oppgave fra NAV") for ekstern varsling. Teksten kan ikke være lengre enn 40 tegn. 
 Det er ikke tillatt å sette feltet dersom <code>eksternVarsling</code> er <code>false</code>.</p>
 <h2 id="schemas">Schemas</h2>
-<p><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/oppgaveInput.avsc">Oppgave-schemas</a> på Github.</p>
+<p><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/avro/oppgaveInput.avsc">Oppgave-schemas</a> på Github.</p>
                 
               
               

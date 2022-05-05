@@ -703,14 +703,14 @@ DittNAV ved innlesing fra kafka, før eventene vises til sluttbruker. Ved å bru
 eventene blir avvist av DittNAV pga valideringsfeil. </p>
 <p>Hvis det forsøkes å bygge et event med ugyldige feltverdier, så vil builderen kaste en <code>FieldValidationException</code> ved kallet 
 til <code>*.build()</code>. Denne exception-en vil gi informasjon om om hvilket felt som feilet og hva som skjedde.</p>
-<p>Se valideringsregler <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/util/ValidationUtil.java">her</a></p>
+<p>Se valideringsregler <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/util/ValidationUtil.java">her</a></p>
 <h3 id="buildere">Buildere</h3>
 <ul>
-<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/NokkelInputBuilder.java">Nokkel</a></li>
-<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/BeskjedInputBuilder.java">Beskjed</a></li>
-<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/OppgaveInputBuilder.java">Oppgave</a></li>
-<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/DoneInputBuilder.java">Done</a></li>
-<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/java/no/nav/brukernotifikasjon/schemas/builders/StatusoppdateringInputBuilder.java">Statusoppdatering</a></li>
+<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/NokkelInputBuilder.java">Nokkel</a></li>
+<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/BeskjedInputBuilder.java">Beskjed</a></li>
+<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/OppgaveInputBuilder.java">Oppgave</a></li>
+<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/DoneInputBuilder.java">Done</a></li>
+<li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/StatusoppdateringInputBuilder.java">Statusoppdatering</a></li>
 </ul>
 <h2 id="kodeeksempel">Kodeeksempel</h2>
 <pre><code>BeskjedInputBuilder builder = getBuilderWithValues();

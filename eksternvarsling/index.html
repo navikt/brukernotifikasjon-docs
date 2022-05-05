@@ -693,9 +693,9 @@ Feltet er ikke påkrevet. Hvis det ikke settes vil epost være preferert varslin
 <p>All SMS og e-post får en standard tekst. Dette er mulig å overstyre for både SMS og e-post, dette gjøres gjennom disse to feltene, disse feltene er ikke påkrevet:</p>
 <ul>
 <li><code>smsVarslingstekst</code> skal overstyre SMS-teksten. Hvis dette feltet ikke er satt, skal bruker få en SMS med standard tekst:
-<a href="https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/sms_beskjed.txt">beskjed</a> /<a href="https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/sms_oppgave.txt">oppgave</a>.</li>
+<a href="https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/sms_beskjed.txt">beskjed</a> /<a href="https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/sms_oppgave.txt">oppgave</a>.</li>
 <li><code>epostVarslingstekst</code> skal overstyre epost-teksten. Hvis dette feltet ikke er satt, skal bruker få en epost med standard tekst:
-<a href="https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_beskjed.txt">beskjed</a> /<a href="https://github.com/navikt/dittnav-varselbestiller/blob/master/src/main/resources/texts/epost_oppgave.txt">oppgave</a>. 
+<a href="https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/epost_beskjed.txt">beskjed</a> /<a href="https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/epost_oppgave.txt">oppgave</a>. 
 Kun innhold av <code>&lt;body&gt;</code>(<a href="https://github.com/navikt/dittnav-varselbestiller/blob/6d4790261c4dd8bcde293da3b87b30a2d605f3c5/src/main/resources/texts/epost_mal.txt">e-post mal</a>) skal overstyres.</li>
 <li><code>epostVarslingstittel</code> skal overstyre epost-tittel. Hvis dette feltet ikke er satt, skal bruker få en epost med standard tittel, "Beskjed fra NAV" for <code>beskjed</code> og "Du har fått en oppgave fra NAV" for <code>oppgave</code>.</li>
 </ul>
@@ -716,7 +716,7 @@ Les mer om dette <a href="https://confluence.adeo.no/display/BOA/For+Konsumenter
 <li>Når varselbestillingen oversendes Team Dokumentløsninger opprettes en bestillingsID. Denne ID-en har følgende format: <code>&lt;eventtype&gt;-&lt;appnavn&gt;-&lt;eventID&gt;</code>. 
 <code>&lt;eventtype&gt;</code> er enten B for Beskjed eller O for Oppgave. BestillingsID-en vil bl.a. finnes igjen i eventene som skrives til status-topic-en nevnt tidligere.</li>
 </ul>
-<p><img alt="Images" src="https://github.com/navikt/brukernotifikasjon-docs/blob/master/docs/assets/Eksternvarsling.png?raw=true" /></p>
+<p><img alt="Images" src="https://github.com/navikt/brukernotifikasjon-docs/blob/main/docs/assets/Eksternvarsling.png?raw=true" /></p>
                 
               
               
