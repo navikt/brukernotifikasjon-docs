@@ -32,7 +32,7 @@ Les mer om dette [her](https://confluence.adeo.no/display/BOA/For+Konsumenter).
     - Det er 7 dager mellom notifikasjon og re-notifikasjonen blir sendt.
     - Re-notifikasjon avbestilles hvis vi mottar Done-event for oppgaven.
 * Beskjed-event støtter ikke re-notifikasjon.
-* Når varselbestillingen oversendes Team Dokumentløsninger opprettes en bestillingsID. Denne ID-en har følgende format: `<eventtype>-<appnavn>-<eventID>`. 
-`<eventtype>` er enten B for Beskjed eller O for Oppgave. BestillingsID-en vil bl.a. finnes igjen i eventene som skrives til status-topic-en nevnt tidligere.
+* Når varselbestillingen oversendes Team Dokumentløsninger vil den originale brukernotifikasjonens eventID brukes som bestillingsID. 
+* BestillingsID-en kan brukes til å finne igjen tilhørende oppdateringer når en lytter på `aapen-dok-notifikasjon-status`.
 
 ![Images](https://github.com/navikt/brukernotifikasjon-docs/blob/main/docs/assets/Eksternvarsling.png?raw=true)
