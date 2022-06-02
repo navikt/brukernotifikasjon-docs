@@ -713,8 +713,8 @@ Les mer om dette <a href="https://confluence.adeo.no/display/BOA/For+Konsumenter
 </ul>
 </li>
 <li>Beskjed-event støtter ikke re-notifikasjon.</li>
-<li>Når varselbestillingen oversendes Team Dokumentløsninger opprettes en bestillingsID. Denne ID-en har følgende format: <code>&lt;eventtype&gt;-&lt;appnavn&gt;-&lt;eventID&gt;</code>. 
-<code>&lt;eventtype&gt;</code> er enten B for Beskjed eller O for Oppgave. BestillingsID-en vil bl.a. finnes igjen i eventene som skrives til status-topic-en nevnt tidligere.</li>
+<li>Når varselbestillingen oversendes Team Dokumentløsninger vil den originale brukernotifikasjonens eventID brukes som bestillingsID. </li>
+<li>BestillingsID-en kan brukes til å finne igjen tilhørende oppdateringer når en lytter på <code>aapen-dok-notifikasjon-status</code>.</li>
 </ul>
 <p><img alt="Images" src="https://github.com/navikt/brukernotifikasjon-docs/blob/main/docs/assets/Eksternvarsling.png?raw=true" /></p>
                 
