@@ -15,7 +15,6 @@ Se valideringsregler [her](https://github.com/navikt/brukernotifikasjon-schemas/
 * [Beskjed](https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/BeskjedInputBuilder.java)
 * [Oppgave](https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/OppgaveInputBuilder.java)
 * [Done](https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/DoneInputBuilder.java)
-* [Statusoppdatering](https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/StatusoppdateringInputBuilder.java)
 
 ## Kodeeksempel 
 ```

@@ -1,6 +1,6 @@
 # Introduksjon
 
-Brukernotifikasjoner gjør det mulig for andre team å sende Beskjeder, Oppgaver eller Statusoppdateringer til en spesifikk bruker, og få vist 
+Brukernotifikasjoner gjør det mulig for andre team å sende Beskjeder og Oppgaver til en spesifikk bruker, og få vist 
 dette fram på forsiden av DittNAV.
  
 Dette gjøres gjennom at det blir publisert et event på et sett med topic-er, deretter vil DittNAV ta seg av å vise dette for sluttbruker.

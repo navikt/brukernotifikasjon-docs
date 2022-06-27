@@ -1,7 +1,7 @@
 Se vår [guide](../guide_varslingstype.md) for valg av brukernotifikasjon.
 
 Alle brukernotifikasjoner består av en `key` og en `value` som legges på kafka-topicene. Alle eventtypene bruker [NokkelInput]() som key, 
-mens hver eventtype har sin egen value. Se egene underkapitler for dette ([Beskjed](./beskjed/beskrivelse.md), [Oppgave](./oppgave/beskrivelse.md), [Done](./done/beskrivelse.md) og [Statusoppdatering](./statusoppdatering/beskrivelse.md)).
+mens hver eventtype har sin egen value. Se egene underkapitler for dette ([Beskjed](./beskjed/beskrivelse.md), [Oppgave](./oppgave/beskrivelse.md) og [Done](./done/beskrivelse.md).
 
 Husk å bruk `builderene` våre for å validere alle eventer. Les mer om dette [her](../builder.md).
 
@@ -18,8 +18,7 @@ Feltet kan ikke være null.
 ### grupperidsId
 Feltet grupperingsId brukes for å kunne samle alle eventer som hører til en sak, søknad eller et dokument.
 Dette er typisk en saksId, søknadsId eller dokumentId, men dere velger selv hvilken verdi dere putter der.
-Men det er viktig at det er samme verdi for alle eventer som skal grupperes sammen.
-Typisk bruk for dette feltet vil være oppbygging av tidslinjer. Feltet har en begrensning på 100 tegn og kan ikke være null.
+Men det er viktig at det er samme verdi for alle eventer som skal grupperes sammen. Feltet har en begrensning på 100 tegn og kan ikke være null.
 
 ### fodselsnummer
 Fødselsnummeret til brukeren som eventet tilhører. Feltet har en begrensning på 11 tegn og kan ikke være null.
