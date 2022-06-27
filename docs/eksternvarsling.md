@@ -24,7 +24,7 @@ Team Dokumentløsninger skriver alle hendelser i forbindelse med en varselbestil
 Produsenten må selv vurdere om det er behov for å agere på hendelsen. Les mer om mulige statuser [her](https://confluence.adeo.no/display/BOA/For+Konsumenter). 
 Tilgang til topic kan fås ved å kontakte Team Dokumentløsninger på #team-dokumentløsninger.
 
-#### Generell informasjon:
+#### Generell informasjon
 
 * Det kan bestilles eksternt varsel på både SMS og epost. Team Dokumentløsninger henter kontaktinformasjonen til sluttbruker og det er dette som til slutt avgjør hvilken kanal det kan varsles i. 
 Les mer om dette [her](https://confluence.adeo.no/display/BOA/For+Konsumenter).
@@ -36,3 +36,10 @@ Les mer om dette [her](https://confluence.adeo.no/display/BOA/For+Konsumenter).
 * BestillingsID-en kan brukes til å finne igjen tilhørende oppdateringer når en lytter på `aapen-dok-notifikasjon-status`.
 
 ![Images](https://github.com/navikt/brukernotifikasjon-docs/blob/main/docs/assets/Eksternvarsling.png?raw=true)
+
+#### Ekstern varsling i dev-miljø
+
+Funksjonaliteten for faktisk å sende epost og/eller SMS fra dev-miljø er som standard inaktiv. Det er imidlertidig mulig å aktivere denne muligheten, men det krever noen forberedelser. Sending av eksternt varsel
+gjøres via Altinn, og man må derfor benytte en testbruker som også eksisterer i Altinns testmiljø. Det er noen få slike testbrukere listet opp i [dokumentasjonen](https://confluence.adeo.no/display/BOA/QDIST011+-+DistribuerForsendelseTilDPI-2.+Testing) til Team Dokumentløsninger.
+Før man sender bør man sjekke hvilken kontaktinformasjon som er registrert på testbrukeren i Dolly, og om nødvendig endre dette til en adresse/nummer man selv har kontroll på. 
+I tillegg må man gi beskjed til Team Dokumentløsninger, f.eks. i #team_dokumentløsninger på Slack, om at man ønsker midlertidig å aktivere integrasjonen mot Altinn. 

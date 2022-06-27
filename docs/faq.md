@@ -54,3 +54,6 @@ Teksten bør være kort og konsis, med så mye informasjon om området som jurid
 
 ## Kan vi sende lenker i varsel på SMS og e-post?
 Det er ikke anbefalt å sende lenker på SMS og e-post, men det er ingen teknisk begrensning som hindrer det. Det anbefales generelt at man henviser brukeren til "Logg inn på nav.no" fremfor å lenke direkte.
+
+## Kan man sende SMS eller e-post i dev-miljø?
+Ja. Se mer informasjon om dette under [Ekstern varsling](./eksternvarsling.md)
