@@ -7,9 +7,8 @@ Se [NokkelInput](../fellesinfo.md)
 Beskrivelse av feltene til eventet `Oppgave`.
 Husk å validere alle eventene med `builderene` våre. Les mer om dette [her](../../builder.md).
 
-### tidspunkt
-Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig.
-Må være epoch milliseconds, og UTC som tidssone.
+### tidspunkt - deprecated
+Feltet vises ikke til bruker, og feltet vil derfor etter hvert forsvinne. Tidspunktet som vises til bruker er tidspunktet da eventet ble behandlet første gang.
 
 ### tekst
 Dette er teksten som faktisk vises i eventet. Det er ikke noen støtte for å formatere teksten som settes i dette feltet. 

@@ -47,7 +47,13 @@ Topicene produsentene skriver til har én uke retention, men vi har et eget sett
 Ja. Se mer informasjon om dette under [Ekstern varsling](./eksternvarsling.md)
 
 ## Kan vi sette vår egen tekst i varsel på SMS og e-post?
-Nei. Det sendes en pre-definert standard tekst, som ikke avslører noen sensitiv informasjon om hva brukerens varsel gjelder.
+Som standard settes en pre-definert tekst, som ikke avslører noen sensitiv informasjon om hva brukerens varsel gjelder. Det er imidlertid mulig å sette sin egen tekst dersom man ønsker det,
+både for SMS og e-post for beskjeder og oppgaver. Se mer informasjon under feltbeskrivelsene for den enkelte eventtypen.
 
-## Kan vi sende lenker i varselene?
-Nei. Teksten i varslene inneholder informasjon til brukeren om å logge seg inn på Ditt NAV, men inneholder ikke lenker brukeren kan trykke på.
+Teksten bør være kort og konsis, med så mye informasjon om området som juridisk mulig. Eksempel-tekst/anbefalt tekst: "Hei! Du har fått <brev, melding> om <område>. Logg inn på nav.no for å lese..."
+
+## Kan vi sende lenker i varsel på SMS og e-post?
+Det er ikke anbefalt å sende lenker på SMS og e-post, men det er ingen teknisk begrensning som hindrer det. Det anbefales generelt at man henviser brukeren til "Logg inn på nav.no" fremfor å lenke direkte.
+
+## Kan man sende SMS eller e-post i dev-miljø?
+Ja. Se mer informasjon om dette under [Ekstern varsling](./eksternvarsling.md)
