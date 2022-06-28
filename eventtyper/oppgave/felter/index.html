@@ -552,8 +552,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tidspunkt" class="md-nav__link">
-    tidspunkt
+  <a href="#tidspunkt-deprecated" class="md-nav__link">
+    tidspunkt - deprecated
   </a>
   
 </li>
@@ -657,72 +657,6 @@
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-5" type="checkbox" id="nav-11-5">
-    
-    <label class="md-nav__link" for="nav-11-5">
-      Statusoppdatering
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Statusoppdatering" data-md-level="2">
-      <label class="md-nav__title" for="nav-11-5">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
-        Statusoppdatering
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../statusoppdatering/beskrivelse/" title="Beskrivelse" class="md-nav__link">
-      Beskrivelse
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../statusoppdatering/felter/" title="Feltbeskrivelser" class="md-nav__link">
-      Feltbeskrivelser
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../statusoppdatering/topic/" title="Kafka topics" class="md-nav__link">
-      Kafka topics
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
       </ul>
     </nav>
   </li>
@@ -769,8 +703,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tidspunkt" class="md-nav__link">
-    tidspunkt
+  <a href="#tidspunkt-deprecated" class="md-nav__link">
+    tidspunkt - deprecated
   </a>
   
 </li>
@@ -872,9 +806,8 @@
 <h2 id="oppgaveinput-kafka-value">OppgaveInput (Kafka value)</h2>
 <p>Beskrivelse av feltene til eventet <code>Oppgave</code>.
 Husk å validere alle eventene med <code>builderene</code> våre. Les mer om dette <a href="../../../builder/">her</a>.</p>
-<h3 id="tidspunkt">tidspunkt</h3>
-<p>Et tidspunkt som noe skjedde, f.eks. da saksbehandlingen av en søknad var ferdig.
-Må være epoch milliseconds, og UTC som tidssone.</p>
+<h3 id="tidspunkt-deprecated">tidspunkt - deprecated</h3>
+<p>Feltet vises ikke til bruker, og feltet vil derfor etter hvert forsvinne. Tidspunktet som vises til bruker er tidspunktet da eventet ble behandlet første gang.</p>
 <h3 id="tekst">tekst</h3>
 <p>Dette er teksten som faktisk vises i eventet. Det er ikke noen støtte for å formatere teksten som settes i dette feltet. 
 Feltet har en begrensning på 500 tegn og kan ikke være null.</p>

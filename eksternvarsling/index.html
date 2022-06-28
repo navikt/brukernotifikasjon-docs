@@ -232,7 +232,14 @@
       
         <li class="md-nav__item">
   <a href="#generell-informasjon" class="md-nav__link">
-    Generell informasjon:
+    Generell informasjon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ekstern-varsling-i-dev-milj" class="md-nav__link">
+    Ekstern varsling i dev-miljø
   </a>
   
 </li>
@@ -563,72 +570,6 @@
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-5" type="checkbox" id="nav-11-5">
-    
-    <label class="md-nav__link" for="nav-11-5">
-      Statusoppdatering
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Statusoppdatering" data-md-level="2">
-      <label class="md-nav__title" for="nav-11-5">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
-        Statusoppdatering
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../eventtyper/statusoppdatering/beskrivelse/" title="Beskrivelse" class="md-nav__link">
-      Beskrivelse
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../eventtyper/statusoppdatering/felter/" title="Feltbeskrivelser" class="md-nav__link">
-      Feltbeskrivelser
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../eventtyper/statusoppdatering/topic/" title="Kafka topics" class="md-nav__link">
-      Kafka topics
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
       </ul>
     </nav>
   </li>
@@ -661,7 +602,14 @@
       
         <li class="md-nav__item">
   <a href="#generell-informasjon" class="md-nav__link">
-    Generell informasjon:
+    Generell informasjon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ekstern-varsling-i-dev-milj" class="md-nav__link">
+    Ekstern varsling i dev-miljø
   </a>
   
 </li>
@@ -703,7 +651,7 @@ Kun innhold av <code>&lt;body&gt;</code>(<a href="https://github.com/navikt/ditt
 Team Dokumentløsninger skriver alle hendelser i forbindelse med en varselbestilling til denne topic-en, og her må produsenten overvåke status til eventet som er sendt. 
 Produsenten må selv vurdere om det er behov for å agere på hendelsen. Les mer om mulige statuser <a href="https://confluence.adeo.no/display/BOA/For+Konsumenter">her</a>. 
 Tilgang til topic kan fås ved å kontakte Team Dokumentløsninger på #team-dokumentløsninger.</p>
-<h4 id="generell-informasjon">Generell informasjon:</h4>
+<h4 id="generell-informasjon">Generell informasjon</h4>
 <ul>
 <li>Det kan bestilles eksternt varsel på både SMS og epost. Team Dokumentløsninger henter kontaktinformasjonen til sluttbruker og det er dette som til slutt avgjør hvilken kanal det kan varsles i. 
 Les mer om dette <a href="https://confluence.adeo.no/display/BOA/For+Konsumenter">her</a>.</li>
@@ -717,6 +665,11 @@ Les mer om dette <a href="https://confluence.adeo.no/display/BOA/For+Konsumenter
 <li>BestillingsID-en kan brukes til å finne igjen tilhørende oppdateringer når en lytter på <code>aapen-dok-notifikasjon-status</code>.</li>
 </ul>
 <p><img alt="Images" src="https://github.com/navikt/brukernotifikasjon-docs/blob/main/docs/assets/Eksternvarsling.png?raw=true" /></p>
+<h4 id="ekstern-varsling-i-dev-milj">Ekstern varsling i dev-miljø</h4>
+<p>Funksjonaliteten for faktisk å sende epost og/eller SMS fra dev-miljø er som standard inaktiv. Det er imidlertidig mulig å aktivere denne muligheten, men det krever noen forberedelser. Sending av eksternt varsel
+gjøres via Altinn, og man må derfor benytte en testbruker som også eksisterer i Altinns testmiljø. Det er noen få slike testbrukere listet opp i <a href="https://confluence.adeo.no/display/BOA/QDIST011+-+DistribuerForsendelseTilDPI-2.+Testing">dokumentasjonen</a> til Team Dokumentløsninger.
+Før man sender bør man sjekke hvilken kontaktinformasjon som er registrert på testbrukeren i Dolly, og om nødvendig endre dette til en adresse/nummer man selv har kontroll på. 
+I tillegg må man gi beskjed til Team Dokumentløsninger, f.eks. i #team_dokumentløsninger på Slack, om at man ønsker midlertidig å aktivere integrasjonen mot Altinn. </p>
                 
               
               
