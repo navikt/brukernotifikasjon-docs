@@ -15,10 +15,8 @@ Det er denne `eventID`-en som benyttes for å deaktivere eventer som er utført.
 Dette gjøres ved å sende et event av typen done, med referanse til det eventet som ikke skal vises på DittNAV lengre.
 Feltet kan ikke være null.
 
-### grupperidsId
-Feltet grupperingsId brukes for å kunne samle alle eventer som hører til en sak, søknad eller et dokument.
-Dette er typisk en saksId, søknadsId eller dokumentId, men dere velger selv hvilken verdi dere putter der.
-Men det er viktig at det er samme verdi for alle eventer som skal grupperes sammen. Feltet har en begrensning på 100 tegn og kan ikke være null.
+### grupperidsId - deprecated
+Feltet vil etter hvert fjernes.
 
 ### fodselsnummer
 Fødselsnummeret til brukeren som eventet tilhører. Feltet har en begrensning på 11 tegn og kan ikke være null.
