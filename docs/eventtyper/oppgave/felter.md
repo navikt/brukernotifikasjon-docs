@@ -47,7 +47,7 @@ Kun innhold av `<body>`([e-post mal](https://github.com/navikt/dittnav-varselbes
 Teksten kan innholde HTML tagger som er gyldig i `<body>` tag og den kan ikke være lengre enn 4,000 tegn. 
 Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
 
-### epostVarslingsttittel (valgfri)
+### epostVarslingstittel (valgfri)
 Tekst som skal overstyre epostens standardtittel ("Du har fått en oppgave fra NAV") for ekstern varsling. Teksten kan ikke være lengre enn 40 tegn. 
 Det er ikke tillatt å sette feltet dersom `eksternVarsling` er `false`.
 
