@@ -347,8 +347,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kan-vi-sende-lenker-i-varselene" class="md-nav__link">
-    Kan vi sende lenker i varselene?
+  <a href="#kan-vi-sende-lenker-i-varsel-pa-sms-og-e-post" class="md-nav__link">
+    Kan vi sende lenker i varsel på SMS og e-post?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kan-man-sende-sms-eller-e-post-i-dev-milj" class="md-nav__link">
+    Kan man sende SMS eller e-post i dev-miljø?
   </a>
   
 </li>
@@ -667,72 +674,6 @@
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-5" type="checkbox" id="nav-11-5">
-    
-    <label class="md-nav__link" for="nav-11-5">
-      Statusoppdatering
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Statusoppdatering" data-md-level="2">
-      <label class="md-nav__title" for="nav-11-5">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
-        Statusoppdatering
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../eventtyper/statusoppdatering/beskrivelse/" title="Beskrivelse" class="md-nav__link">
-      Beskrivelse
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../eventtyper/statusoppdatering/felter/" title="Feltbeskrivelser" class="md-nav__link">
-      Feltbeskrivelser
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../eventtyper/statusoppdatering/topic/" title="Kafka topics" class="md-nav__link">
-      Kafka topics
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
       </ul>
     </nav>
   </li>
@@ -868,8 +809,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kan-vi-sende-lenker-i-varselene" class="md-nav__link">
-    Kan vi sende lenker i varselene?
+  <a href="#kan-vi-sende-lenker-i-varsel-pa-sms-og-e-post" class="md-nav__link">
+    Kan vi sende lenker i varsel på SMS og e-post?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kan-man-sende-sms-eller-e-post-i-dev-milj" class="md-nav__link">
+    Kan man sende SMS eller e-post i dev-miljø?
   </a>
   
 </li>
@@ -925,9 +873,13 @@ For å få skrivetilgang må man som produsent bekrefte at man har forstått hva
 <h2 id="kan-det-sendes-varsel-pa-sms-ogeller-e-post-til-bruker-samtidig-som-det-opprettes-brukernotifikasjon-pa-ditt-nav">Kan det sendes varsel på SMS og/eller e-post til bruker samtidig som det opprettes Brukernotifikasjon på Ditt NAV?</h2>
 <p>Ja. Se mer informasjon om dette under <a href="../eksternvarsling/">Ekstern varsling</a></p>
 <h2 id="kan-vi-sette-var-egen-tekst-i-varsel-pa-sms-og-e-post">Kan vi sette vår egen tekst i varsel på SMS og e-post?</h2>
-<p>Nei. Det sendes en pre-definert standard tekst, som ikke avslører noen sensitiv informasjon om hva brukerens varsel gjelder.</p>
-<h2 id="kan-vi-sende-lenker-i-varselene">Kan vi sende lenker i varselene?</h2>
-<p>Nei. Teksten i varslene inneholder informasjon til brukeren om å logge seg inn på Ditt NAV, men inneholder ikke lenker brukeren kan trykke på.</p>
+<p>Som standard settes en pre-definert tekst, som ikke avslører noen sensitiv informasjon om hva brukerens varsel gjelder. Det er imidlertid mulig å sette sin egen tekst dersom man ønsker det,
+både for SMS og e-post for beskjeder og oppgaver. Se mer informasjon under feltbeskrivelsene for den enkelte eventtypen.</p>
+<p>Teksten bør være kort og konsis, med så mye informasjon om området som juridisk mulig. Eksempel-tekst/anbefalt tekst: "Hei! Du har fått <brev, melding> om <område>. Logg inn på nav.no for å lese..."</p>
+<h2 id="kan-vi-sende-lenker-i-varsel-pa-sms-og-e-post">Kan vi sende lenker i varsel på SMS og e-post?</h2>
+<p>Det er ikke anbefalt å sende lenker på SMS og e-post, men det er ingen teknisk begrensning som hindrer det. Det anbefales generelt at man henviser brukeren til "Logg inn på nav.no" fremfor å lenke direkte.</p>
+<h2 id="kan-man-sende-sms-eller-e-post-i-dev-milj">Kan man sende SMS eller e-post i dev-miljø?</h2>
+<p>Ja. Se mer informasjon om dette under <a href="../eksternvarsling/">Ekstern varsling</a></p>
                 
               
               
