@@ -11,7 +11,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-5.5.7">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-5.5.7">
     
     
       
@@ -353,8 +353,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#grupperidsid-deprecated" class="md-nav__link">
-    grupperidsId - deprecated
+  <a href="#grupperidsid" class="md-nav__link">
+    grupperidsId
   </a>
   
 </li>
@@ -615,6 +615,72 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-5" type="checkbox" id="nav-11-5">
+    
+    <label class="md-nav__link" for="nav-11-5">
+      Statusoppdatering
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Statusoppdatering" data-md-level="2">
+      <label class="md-nav__title" for="nav-11-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Statusoppdatering
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../statusoppdatering/beskrivelse/" title="Beskrivelse" class="md-nav__link">
+      Beskrivelse
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../statusoppdatering/felter/" title="Feltbeskrivelser" class="md-nav__link">
+      Feltbeskrivelser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../statusoppdatering/topic/" title="Kafka topics" class="md-nav__link">
+      Kafka topics
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -659,8 +725,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#grupperidsid-deprecated" class="md-nav__link">
-    grupperidsId - deprecated
+  <a href="#grupperidsid" class="md-nav__link">
+    grupperidsId
   </a>
   
 </li>
@@ -724,7 +790,7 @@
                 
                 <p>Se vår <a href="../../guide_varslingstype/">guide</a> for valg av brukernotifikasjon.</p>
 <p>Alle brukernotifikasjoner består av en <code>key</code> og en <code>value</code> som legges på kafka-topicene. Alle eventtypene bruker <a href="">NokkelInput</a> som key, 
-mens hver eventtype har sin egen value. Se egene underkapitler for dette (<a href="../beskjed/beskrivelse/">Beskjed</a>, <a href="../oppgave/beskrivelse/">Oppgave</a> og <a href="../done/beskrivelse/">Done</a>.</p>
+mens hver eventtype har sin egen value. Se egene underkapitler for dette (<a href="../beskjed/beskrivelse/">Beskjed</a>, <a href="../oppgave/beskrivelse/">Oppgave</a>, <a href="../done/beskrivelse/">Done</a> og <a href="../statusoppdatering/beskrivelse/">Statusoppdatering</a>).</p>
 <p>Husk å bruk <code>builderene</code> våre for å validere alle eventer. Les mer om dette <a href="../../builder/">her</a>.</p>
 <h2 id="kafka-key-nokkelinput">Kafka key (NokkelInput)</h2>
 <p>Feltene i NokkelInput er som en kompositt-nøkkel for å unikt identifisere eventet.
@@ -734,8 +800,11 @@ Alle feltene nedenfor må være med for at eventet skal bli validert.</p>
 Det er denne <code>eventID</code>-en som benyttes for å deaktivere eventer som er utført. 
 Dette gjøres ved å sende et event av typen done, med referanse til det eventet som ikke skal vises på DittNAV lengre.
 Feltet kan ikke være null.</p>
-<h3 id="grupperidsid-deprecated">grupperidsId - deprecated</h3>
-<p>Feltet vil etter hvert fjernes.</p>
+<h3 id="grupperidsid">grupperidsId</h3>
+<p>Feltet grupperingsId brukes for å kunne samle alle eventer som hører til en sak, søknad eller et dokument.
+Dette er typisk en saksId, søknadsId eller dokumentId, men dere velger selv hvilken verdi dere putter der.
+Men det er viktig at det er samme verdi for alle eventer som skal grupperes sammen.
+Typisk bruk for dette feltet vil være oppbygging av tidslinjer. Feltet har en begrensning på 100 tegn og kan ikke være null.</p>
 <h3 id="fodselsnummer">fodselsnummer</h3>
 <p>Fødselsnummeret til brukeren som eventet tilhører. Feltet har en begrensning på 11 tegn og kan ikke være null.</p>
 <h3 id="namespace">namespace</h3>
@@ -743,7 +812,7 @@ Feltet kan ikke være null.</p>
 <h3 id="appnavn">appnavn</h3>
 <p>Navnet på appen som har produsert eventet. Feltet har en begrensning på 100 tegn og kan ikke være null.</p>
 <h4 id="schemas">Schemas</h4>
-<p><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/avro/nokkelInput.avsc">Nokkel-schemas</a> på Github.</p>
+<p><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/master/src/main/avro/nokkelInput.avsc">Nokkel-schemas</a> på Github.</p>
                 
               
               
