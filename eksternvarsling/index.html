@@ -631,22 +631,19 @@
                 
                 
                 <h1 id="ekstern-varsling">Ekstern varsling</h1>
-<p>Det er mulig å sende ekstern varsling på enten epost eller SMS, eller begge deler, til sluttbruker om ny beskjed eller oppgave på forsiden av Ditt NAV.</p>
+<p>Det er mulig å sende ekstern varsling på enten epost eller SMS, eller begge deler, til sluttbruker om ny beskjed eller oppgave på min side.</p>
 <p>Skjemaene for Beskjed og Oppgave inneholder et felt som brukes for å indikere dette, <code>eksternVarsling</code>. 
 Feltet er ikke påkrevet, og har default-verdien <code>false</code>. Settes dette til <code>true</code> vil det bestilles varsling.
-Rent praktisk foregår dette ved at DittNAV da oppretter et Kafka-event på en topic tilhørende Team Dokumentløsninger. 
+Rent praktisk foregår dette ved at min side oppretter et Kafka-event på ett topic tilhørende Team Dokumentløsninger. 
 Det er dette teamet som står for selve varselutsendingen, gjennom tjenesten doknotifikasjon.</p>
-<p>Beskjed og Oppgave inneholder i tillegg feltet <code>prefererteKanaler</code>. I dette feltet kan det settes hvilke kanaler som er prefererte varslingskanaler til brukeren. 
-Feltet er ikke påkrevet. Hvis det ikke settes vil epost være preferert varslingskanal.</p>
-<p>All SMS og e-post får en standard tekst. Dette er mulig å overstyre for både SMS og e-post, dette gjøres gjennom disse to feltene, disse feltene er ikke påkrevet:</p>
-<ul>
-<li><code>smsVarslingstekst</code> skal overstyre SMS-teksten. Hvis dette feltet ikke er satt, skal bruker få en SMS med standard tekst:
-<a href="https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/sms_beskjed.txt">beskjed</a> /<a href="https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/sms_oppgave.txt">oppgave</a>.</li>
-<li><code>epostVarslingstekst</code> skal overstyre epost-teksten. Hvis dette feltet ikke er satt, skal bruker få en epost med standard tekst:
+<p>Beskjed og Oppgave inneholder i tillegg feltet <code>prefererteKanaler</code>. I dette feltet kan det settes hvilke kanaler som er prefererte varslingskanaler til brukeren. Feltet er ikke påkrevet. Hvis det ikke settes vil epost være preferert varslingskanal.</p>
+<p>All SMS og e-post får en standard tekst. Dette er mulig å overstyre for både SMS og e-post.
+* <code>smsVarslingstekst</code> skal overstyre SMS-teksten. Hvis dette feltet ikke er satt, skal bruker få en SMS med standard tekst:
+<a href="https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/sms_beskjed.txt">beskjed</a> /<a href="https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/sms_oppgave.txt">oppgave</a>.
+* <code>epostVarslingstekst</code> skal overstyre epost-teksten. Hvis dette feltet ikke er satt, skal bruker få en epost med standard tekst:
 <a href="https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/epost_beskjed.txt">beskjed</a> /<a href="https://github.com/navikt/dittnav-varselbestiller/blob/main/src/main/resources/texts/epost_oppgave.txt">oppgave</a>. 
-Kun innhold av <code>&lt;body&gt;</code>(<a href="https://github.com/navikt/dittnav-varselbestiller/blob/6d4790261c4dd8bcde293da3b87b30a2d605f3c5/src/main/resources/texts/epost_mal.txt">e-post mal</a>) skal overstyres.</li>
-<li><code>epostVarslingstittel</code> skal overstyre epost-tittel. Hvis dette feltet ikke er satt, skal bruker få en epost med standard tittel, "Beskjed fra NAV" for <code>beskjed</code> og "Du har fått en oppgave fra NAV" for <code>oppgave</code>.</li>
-</ul>
+Kun innhold av <code>&lt;body&gt;</code>(<a href="https://github.com/navikt/dittnav-varselbestiller/blob/6d4790261c4dd8bcde293da3b87b30a2d605f3c5/src/main/resources/texts/epost_mal.txt">e-post mal</a>) skal overstyres.
+* <code>epostVarslingstittel</code> skal overstyre epost-tittel. Hvis dette feltet ikke er satt, skal bruker få en epost med standard tittel, "Beskjed fra NAV" for <code>beskjed</code> og "Du har fått en oppgave fra NAV" for <code>oppgave</code>.</p>
 <p>For å ta dette i bruk må alle produsenter ha et forhold til Kafka-topic-en <code>aapen-dok-notifikasjon-status</code>. 
 Team Dokumentløsninger skriver alle hendelser i forbindelse med en varselbestilling til denne topic-en, og her må produsenten overvåke status til eventet som er sendt. 
 Produsenten må selv vurdere om det er behov for å agere på hendelsen. Les mer om mulige statuser <a href="https://confluence.adeo.no/display/BOA/For+Konsumenter">her</a>. 
@@ -660,8 +657,8 @@ Les mer om dette <a href="https://confluence.adeo.no/display/BOA/For+Konsumenter
 <li>Re-notifikasjon avbestilles hvis vi mottar Done-event for oppgaven.</li>
 </ul>
 </li>
-<li>Beskjed-event støtter ikke re-notifikasjon.</li>
-<li>Når varselbestillingen oversendes Team Dokumentløsninger vil den originale brukernotifikasjonens eventID brukes som bestillingsID. </li>
+<li>Beskjed støtter ikke re-notifikasjon.</li>
+<li>Når varselbestillingen oversendes Team Dokumentløsninger vil den originale varslets eventID brukes som bestillingsID. </li>
 <li>BestillingsID-en kan brukes til å finne igjen tilhørende oppdateringer når en lytter på <code>aapen-dok-notifikasjon-status</code>.</li>
 </ul>
 <p><img alt="Images" src="https://github.com/navikt/brukernotifikasjon-docs/blob/main/docs/assets/Eksternvarsling.png?raw=true" /></p>
