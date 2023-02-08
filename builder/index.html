@@ -631,12 +631,9 @@
                 
                 
                 <h1 id="builder">Builder</h1>
-<p>Alle produsenter oppfordres sterkt til å bruke <code>builderene</code> til å opprette eventer. Grunnen til dette er at 
-builderene vil validere alle feltene, før et event opprettes. Dette er de samme valideringsreglene som brukes av 
-DittNAV ved innlesing fra kafka, før eventene vises til sluttbruker. Ved å bruke builderene minimeres sjansene for at
-eventene blir avvist av DittNAV pga valideringsfeil. </p>
-<p>Hvis det forsøkes å bygge et event med ugyldige feltverdier, så vil builderen kaste en <code>FieldValidationException</code> ved kallet 
-til <code>*.build()</code>. Denne exception-en vil gi informasjon om om hvilket felt som feilet og hva som skjedde.</p>
+<p>Builderene validerer alle felteer, før et event opprettes og bruker samme valideringsregler som brukes av 
+min side ved innlesing fra kafka, før varslet vises til sluttbruker. Ved å bruke builderene minimeres sjansene for at
+eventene blir avvist av min side pga valideringsfeil. </p>
 <p>Se valideringsregler <a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/util/ValidationUtil.java">her</a></p>
 <h3 id="buildere">Buildere</h3>
 <ul>
@@ -646,7 +643,7 @@ til <code>*.build()</code>. Denne exception-en vil gi informasjon om om hvilket 
 <li><a href="https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/DoneInputBuilder.java">Done</a></li>
 </ul>
 <h2 id="kodeeksempel">Kodeeksempel</h2>
-<pre><code>BeskjedInputBuilder builder = getBuilderWithValues();
+<pre><code class="language-java">BeskjedInputBuilder builder = getBuilderWithValues();
 Beskjed beskjed = builder.build(); // Alle felter valideres, før eventet eventuelt blir opprettet
 
 private BeskjedInputBuilder getBuilderWithValues() {
