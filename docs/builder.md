@@ -1,12 +1,8 @@
 # Builder
 
-Alle produsenter oppfordres sterkt til å bruke `builderene` til å opprette eventer. Grunnen til dette er at 
-builderene vil validere alle feltene, før et event opprettes. Dette er de samme valideringsreglene som brukes av 
-DittNAV ved innlesing fra kafka, før eventene vises til sluttbruker. Ved å bruke builderene minimeres sjansene for at
-eventene blir avvist av DittNAV pga valideringsfeil. 
-
-Hvis det forsøkes å bygge et event med ugyldige feltverdier, så vil builderen kaste en `FieldValidationException` ved kallet 
-til `*.build()`. Denne exception-en vil gi informasjon om om hvilket felt som feilet og hva som skjedde.
+Builderene validerer alle felteer, før et event opprettes og bruker samme valideringsregler som brukes av 
+min side ved innlesing fra kafka, før varslet vises til sluttbruker. Ved å bruke builderene minimeres sjansene for at
+eventene blir avvist av min side pga valideringsfeil. 
 
 Se valideringsregler [her](https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/util/ValidationUtil.java)
 
@@ -17,7 +13,7 @@ Se valideringsregler [her](https://github.com/navikt/brukernotifikasjon-schemas/
 * [Done](https://github.com/navikt/brukernotifikasjon-schemas/blob/main/src/main/java/no/nav/brukernotifikasjon/schemas/builders/DoneInputBuilder.java)
 
 ## Kodeeksempel 
-```
+```java
 BeskjedInputBuilder builder = getBuilderWithValues();
 Beskjed beskjed = builder.build(); // Alle felter valideres, før eventet eventuelt blir opprettet
 
