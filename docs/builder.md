@@ -1,6 +1,6 @@
 # Builder
 
-Builderene validerer alle felteer, før et event opprettes og bruker samme valideringsregler som brukes av 
+Builderene validerer alle felteer før et event opprettes og bruker samme valideringsregler som brukes av 
 min side ved innlesing fra kafka, før varslet vises til sluttbruker. Ved å bruke builderene minimeres sjansene for at
 eventene blir avvist av min side pga valideringsfeil. 
 
