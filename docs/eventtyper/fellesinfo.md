@@ -1,3 +1,10 @@
+# Hei!
+Vi har laga ny dokumentasjonside som ser bedre ut og oppdateres oftere, hurra!
+Der finner du info om både varsler(tidligere brukernotifikasjoner) og alt det andre innholdet som ditt team kan få inn på min-side.
+
+https://tms-dokumentasjon.intern.nav.no/
+
+
 Se vår [guide](../guide_varslingstype.md) for valg av brukernotifikasjon.
 
 Alle brukernotifikasjoner består av en `key` og en `value` som legges på kafka-topicene. Alle eventtypene bruker [NokkelInput]() som key, 
